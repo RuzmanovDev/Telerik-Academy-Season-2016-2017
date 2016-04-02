@@ -1,2 +1,2 @@
 # Telerik
-Includes project made @TelerikAcademy
+Includes projects made @TelerikAcademy
