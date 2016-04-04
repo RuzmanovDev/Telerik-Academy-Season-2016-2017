@@ -36,13 +36,7 @@ class Subset
         }
 
 
-        for (int i = 0; i < numbers.Length; i++)
-        {
-            for (int j = 0; j < nu; j++)
-            {
-
-            }
-        }
+        
         Console.WriteLine(subsets);
     }
 }
