@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.NextDate", "1.NextDate\1.NextDate.csproj", "{F316567E-6B21-4275-86E2-6C93B14852BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.Ttribonachi", "2.Ttribonachi\2.Ttribonachi.csproj", "{621DA2A9-73D3-4F47-97F6-ED5D84A71C3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.Carpets", "4.Carpets\4.Carpets.csproj", "{EC5EE60E-955F-4520-9921-04DCB4A1B649}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F316567E-6B21-4275-86E2-6C93B14852BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F316567E-6B21-4275-86E2-6C93B14852BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F316567E-6B21-4275-86E2-6C93B14852BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F316567E-6B21-4275-86E2-6C93B14852BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{621DA2A9-73D3-4F47-97F6-ED5D84A71C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{621DA2A9-73D3-4F47-97F6-ED5D84A71C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{621DA2A9-73D3-4F47-97F6-ED5D84A71C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621DA2A9-73D3-4F47-97F6-ED5D84A71C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC5EE60E-955F-4520-9921-04DCB4A1B649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5EE60E-955F-4520-9921-04DCB4A1B649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5EE60E-955F-4520-9921-04DCB4A1B649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC5EE60E-955F-4520-9921-04DCB4A1B649}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
