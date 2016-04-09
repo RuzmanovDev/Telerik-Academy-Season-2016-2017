@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+    <style>
+
+        tr, td {
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+
+        }
+
+        .right {
+
+            text-align: right;
+            vertical-align: bottom;
+            padding-left: 20px;
+
+        }
+
+        #header {
+            font-style: italic;
+            font-size: 32px;
+            text-align: center;
+        }
+        .left{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th colspan="2" id="header">FreshFruits</th>
+    </tr>
+    <tr>
+        <td class="left">It has long been know that a diet <br/>
+            that includes at least a few<br/>
+            servings of fresh fruit every day<br/>
+            will help keep you healthy, fit<br/>
+            and trim.
+        </td>
+        <td><img src="Fruit.png" alt="fruit"/></td>
+    </tr>
+</table>
+
+<table border="1px">
+    <tr>
+        <td colspan="3">Title goes here</td>
+        <td>A</td>
+        <td class="right" >B</td>
+    </tr>
+    <tr>
+        <td rowspan="3" class="left">C</td>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+        <td class="right">G</td>
+    </tr>
+    <tr>
+        <td>H</td>
+        <td colspan="2">I</td>
+        <td rowspan="2" class="right">J</td>
+    </tr>
+    <tr>
+        <td>K</td>
+        <td>L</td>
+        <td>M</td>
+    </tr>
+    <tr>
+        <td class="right">N</td>
+        <td colspan="4">O</td>
+    </tr>
+</table>
+</body>
+</html>

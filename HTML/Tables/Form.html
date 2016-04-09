@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        fieldset {
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+<form method="post" action="smth.php">
+    <fieldset>
+        <label for="fn">Member Name:</label>
+        <input type="text" id="fn"/>
+        <strong>*req</strong>
+    </fieldset>
+
+    <fieldset>
+        <label for="email" action="smth.php">Email</label>
+        <input type="email" id="email"/>
+        <strong>*req</strong>
+    </fieldset>
+
+    <fieldset>
+        <label for="school" action="smtth.php">School</label>
+        <input type="text" id="school"/>
+        <strong>*req</strong>
+    </fieldset>
+    <input type="submit" value="Submit"/>
+</form>
+
+
+</body>
+</html>
