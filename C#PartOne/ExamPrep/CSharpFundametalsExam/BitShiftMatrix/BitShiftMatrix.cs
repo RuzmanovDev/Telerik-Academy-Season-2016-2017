@@ -40,7 +40,7 @@ namespace BitShiftMatrix
                 value *= 2;
             }
 
-            
+
             //for (long r = 0; r < matrix.GetLength(0); r++)
             //{
             //    for (long c = 0; c < matrix.GetLength(1); c++)
