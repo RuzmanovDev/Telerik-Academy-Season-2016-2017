@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.Ttribonachi", "2.Ttribona
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.Carpets", "4.Carpets\4.Carpets.csproj", "{EC5EE60E-955F-4520-9921-04DCB4A1B649}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormulaBit", "FormulaBit\FormulaBit.csproj", "{7E989C73-B39A-4045-B237-05FFE0CCF73C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sheets", "Sheets\Sheets.csproj", "{81462911-7E92-4ED0-952B-76325D97A599}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{EC5EE60E-955F-4520-9921-04DCB4A1B649}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC5EE60E-955F-4520-9921-04DCB4A1B649}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC5EE60E-955F-4520-9921-04DCB4A1B649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E989C73-B39A-4045-B237-05FFE0CCF73C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E989C73-B39A-4045-B237-05FFE0CCF73C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E989C73-B39A-4045-B237-05FFE0CCF73C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E989C73-B39A-4045-B237-05FFE0CCF73C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81462911-7E92-4ED0-952B-76325D97A599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81462911-7E92-4ED0-952B-76325D97A599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81462911-7E92-4ED0-952B-76325D97A599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81462911-7E92-4ED0-952B-76325D97A599}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
