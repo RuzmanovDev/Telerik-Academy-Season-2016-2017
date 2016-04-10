@@ -2,9 +2,9 @@
 {
     using System;
 
-    class AstrologicalDigits
+    public class AstrologicalDigits
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string input = Console.ReadLine();
             long sum = 0;
@@ -18,13 +18,16 @@
                         sum += int.Parse(input[i].ToString());
                     }
                 }
+
                 if (sum < 10)
                 {
                     break;
                 }
+
                 input = sum.ToString();
                 sum = 0;
             }
+
             Console.WriteLine(sum);
         }
     }
