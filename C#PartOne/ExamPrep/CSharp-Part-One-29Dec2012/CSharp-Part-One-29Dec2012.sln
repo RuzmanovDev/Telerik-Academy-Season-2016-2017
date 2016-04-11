@@ -7,11 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripleDigitRotation", "Trip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qadranacci", "Qadranacci\Qadranacci.csproj", "{B69BD7CA-D44F-4A3C-BC3F-BA770E1AD09F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{28B899A9-3899-4D78-A53A-DF0EC8EDC6B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextCasingHW", "ConsoleApplication1\TextCasingHW.csproj", "{28B899A9-3899-4D78-A53A-DF0EC8EDC6B1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UKFlag", "UKFlag\UKFlag.csproj", "{D794DF59-9099-405C-80E7-E80F5D396843}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poker", "Poker\Poker.csproj", "{17A0E53A-C224-4AD9-A3CE-3E3EC1E46001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngryBits", "AngryBits\AngryBits.csproj", "{5E68AC56-6B5F-48E7-8037-3E55173C98EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{17A0E53A-C224-4AD9-A3CE-3E3EC1E46001}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17A0E53A-C224-4AD9-A3CE-3E3EC1E46001}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17A0E53A-C224-4AD9-A3CE-3E3EC1E46001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E68AC56-6B5F-48E7-8037-3E55173C98EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E68AC56-6B5F-48E7-8037-3E55173C98EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E68AC56-6B5F-48E7-8037-3E55173C98EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E68AC56-6B5F-48E7-8037-3E55173C98EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
