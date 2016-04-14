@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciNumbers", "Fibonac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interval", "Interval\Interval.csproj", "{5C94B29D-0B95-4A7B-A966-C04197E6246D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dwarf", "Dwarf\Dwarf.csproj", "{2B7E5216-37F5-45FE-AD70-3B215580C9B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{5C94B29D-0B95-4A7B-A966-C04197E6246D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C94B29D-0B95-4A7B-A966-C04197E6246D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C94B29D-0B95-4A7B-A966-C04197E6246D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B7E5216-37F5-45FE-AD70-3B215580C9B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B7E5216-37F5-45FE-AD70-3B215580C9B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B7E5216-37F5-45FE-AD70-3B215580C9B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B7E5216-37F5-45FE-AD70-3B215580C9B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
