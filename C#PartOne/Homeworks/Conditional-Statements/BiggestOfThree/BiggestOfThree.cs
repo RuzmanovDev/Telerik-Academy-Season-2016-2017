@@ -1,10 +1,10 @@
-﻿namespace ExchangeNumbers
+﻿namespace BiggestOfThree
 {
     using System;
     using System.Globalization;
     using System.Threading;
 
-    public class ExchangeNumbers
+    public class BiggestOfThree
     {
         public static void Main(string[] args)
         {
@@ -12,16 +12,10 @@
 
             double a = double.Parse(Console.ReadLine());
             double b = double.Parse(Console.ReadLine());
+            double c = double.Parse(Console.ReadLine());
 
-            double eps = 0.000006;
-            if (a - b > eps)
-            {
-                Console.WriteLine("{0} {1}", b, a);
-            }
-            else
-            {
-                Console.WriteLine("{0} {1}", a, b);
-            }
+            double biggest = Math.Max(a, Math.Max(b, c));
+            Console.WriteLine(biggest);
         }
     }
 }
