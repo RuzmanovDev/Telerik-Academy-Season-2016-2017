@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ANacci")]
+[assembly: AssemblyTitle("MasterHerbalist")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ANacci")]
+[assembly: AssemblyProduct("MasterHerbalist")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("b163cb45-06b1-467a-a76d-6f6e28106778")]
+[assembly: Guid("d5d623b5-e6d0-4ad0-9106-d28498214aeb")]
 
 // Version information for an assembly consists of the following four values:
 //

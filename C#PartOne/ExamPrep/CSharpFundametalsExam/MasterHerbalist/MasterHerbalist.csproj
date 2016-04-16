@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B163CB45-06B1-467A-A76D-6F6E28106778}</ProjectGuid>
+    <ProjectGuid>{D5D623B5-E6D0-4AD0-9106-D28498214AEB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ANacci</RootNamespace>
-    <AssemblyName>ANacci</AssemblyName>
+    <RootNamespace>MasterHerbalist</RootNamespace>
+    <AssemblyName>MasterHerbalist</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ANacci.cs" />
+    <Compile Include="MasterHerbalist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
