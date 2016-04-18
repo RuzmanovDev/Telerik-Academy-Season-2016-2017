@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tribonacci", "Tribonacci\Tr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheHorror", "TheHorror\TheHorror.csproj", "{C4259F4D-CB7E-4D10-B37E-FCA5CC75FFFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiamondTrolls", "DiamondTrolls\DiamondTrolls.csproj", "{8A984BEE-CA73-42F4-9074-AC5ED1C3B4A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{C4259F4D-CB7E-4D10-B37E-FCA5CC75FFFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4259F4D-CB7E-4D10-B37E-FCA5CC75FFFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4259F4D-CB7E-4D10-B37E-FCA5CC75FFFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A984BEE-CA73-42F4-9074-AC5ED1C3B4A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A984BEE-CA73-42F4-9074-AC5ED1C3B4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A984BEE-CA73-42F4-9074-AC5ED1C3B4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A984BEE-CA73-42F4-9074-AC5ED1C3B4A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
