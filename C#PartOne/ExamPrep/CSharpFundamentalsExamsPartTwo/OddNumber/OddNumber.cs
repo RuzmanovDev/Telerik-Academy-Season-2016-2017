@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class Program
+    public class OddNumber
     {
         public static void Main(string[] args)
         {
