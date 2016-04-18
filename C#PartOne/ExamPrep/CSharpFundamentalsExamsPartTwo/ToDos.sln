@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheHorror", "TheHorror\TheH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiamondTrolls", "DiamondTrolls\DiamondTrolls.csproj", "{8A984BEE-CA73-42F4-9074-AC5ED1C3B4A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddNumber", "OddNumber\OddNumber.csproj", "{B15F2380-68E8-4C8B-823F-24D733DDE7BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{8A984BEE-CA73-42F4-9074-AC5ED1C3B4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A984BEE-CA73-42F4-9074-AC5ED1C3B4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A984BEE-CA73-42F4-9074-AC5ED1C3B4A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B15F2380-68E8-4C8B-823F-24D733DDE7BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B15F2380-68E8-4C8B-823F-24D733DDE7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B15F2380-68E8-4C8B-823F-24D733DDE7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B15F2380-68E8-4C8B-823F-24D733DDE7BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
