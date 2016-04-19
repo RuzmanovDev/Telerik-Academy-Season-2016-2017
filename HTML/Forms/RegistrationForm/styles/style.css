@@ -1,0 +1,48 @@
+body{
+   /* background-image: url("../bg.jpg");
+    background-repeat: no-repeat; */
+}
+table,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding:5px;
+}
+table{
+    height: 495px;
+}
+.table-header{
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+}
+tfoot{
+    background-color: #88cce9;
+}
+#state{
+    width: 45px;
+}
+#country-code{
+    width: 40px;
+}
+#code{
+    width: 30px;
+    margin:0 5px 0 5px;
+}
+#phone{
+    width:85px;
+}
+#city{
+    width: 100px;
+}
+#gender{
+    float: left;
+}
+#starting-date{
+    width: 225px;
+}
+#foot-buttons{
+    margin: 0 100px;
+}
+textarea {
+    resize: none;
+}

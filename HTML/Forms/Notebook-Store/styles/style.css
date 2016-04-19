@@ -1,0 +1,81 @@
+table,tr,td,th{
+    margin: 0px;
+    padding:0px;
+}
+
+table,tr{
+    border: 2px solid black;
+    border-spacing:0;
+}
+th{
+    border-bottom: 2px solid black;
+     border-spacing:0;
+    height: 50px;
+}
+#wrapper{
+    border-collapse: separate;
+    border-radius:14px;
+}
+#min-price,#max-price,#min-ram,#max-ram{
+    display: block;
+    width: 302px;
+    margin: 25px 0px 25px 10px;
+}
+img{
+    float: left;
+    /*vertical-align: middle;*/
+}
+.processor-info-price{
+    float: left;
+    font-family: Arial;
+    font-size: 20px;
+	margin-left: -275px;
+    margin-top: 110px
+}
+.processor-info-model{
+    float: left;
+    font-family: Arial;
+    font-size: 20px;
+    margin-left: -110px;
+    margin-top: 110px;
+}
+.links a{
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Arial;
+    color: #04afef;
+}
+.links{
+    padding: 15px;
+}
+#inner-table{
+    margin: 14px;
+}
+#inner-table td, .no-border{
+    border:none;
+}
+.products{
+    margin:8px;
+    border: 2px solid black;
+
+}
+legend{
+    margin: 0 auto;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+span{
+    font-size: 20px;
+    font-family: Arial;
+}
+.sliders label{
+    font-family: Arial;
+    font-size: 35px;
+}
+.mac-book-info{
+	float: left;
+    margin-top: 26px;
+    padding-left: 10px;
+}

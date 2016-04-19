@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+<form method="post" action="pesho.php">
+    <table>
+        <tr>
+            <td class="table-header"><label for="last-name">Last name</label></td>
+            <td>
+                <input type="text" id="last-name" required="required" />
+            </td>
+        </tr>
+        <tr>
+            <td class="table-header"><label for="first-name">First name</label></td>
+            <td>
+                <input type="text" id="first-name" required="required" />
+            </td>
+        </tr>
+        <tr>
+            <td class="table-header"><label for="address">Address</label></td>
+            <td>
+                <textarea rows="4" cols="25" id="address" r></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td class="table-header"><label for="city">City</label></td>
+            <td>
+                <input type="text" id="city"/>
+                <label for="state">State</label>
+                <input type="text" id="state"/>
+            </td>
+        </tr>
+        <tr>
+            <td class="table-header"><label for="zip">Zip/Postal/Copy</label></td>
+            <td><input type="text" id="zip"></td>
+        </tr>
+        <tr>
+            <td class="table-header"><label for="country">Country</label></td>
+            <td>
+                <select name="country-name" id="country">
+                    <option value="Bulgaria" selected="selected">Bulgaria</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="table-header">
+                <label for="country-code">Phone(country code, area code, number)</label>
+            </td>
+            <td>
+                (+<input type="text" id="country-code"/>)<input type="text" id="code"/><input type="text" id="phone"/>
+            </td>
+        </tr>
+        <tr>
+            <td class="table-header">
+                <label for="email">E-mail</label>
+            </td>
+            <td>
+                <input type="email" id="email" required="required" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"/>
+        </tr>
+        <tr>
+            <td class="table-header">
+                <label for="birth-date">Birth date</label>
+            </td>
+            <td>
+                <input type="date" id="birth-date" placeholder="дд. мм. гггг г."/>
+            </td>
+        </tr>
+        <tr>
+            <td class="table-header">
+                <label for="gender">Gender</label>
+            </td>
+            <td class="table-header">
+                <select name="Gender" id="gender">
+                    <option value="Male" selected="selected">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="table-header">Starting date</td>
+            <td id="starting-date">
+                <input type="radio" name="date" value="Spring 2015"/>Spring 2015
+                <input type="radio" name="date" value="Summer 2015"/>Summer 2015
+            </td>
+        </tr>
+        <tr>
+            <td class="table-header"><label for="comments">Comments/Questions</label></td>
+            <td>
+                <textarea rows="5" cols="25" id="comments"></textarea>
+            </td>
+        </tr>
+        <tfoot>
+        <td colspan="2">
+            <span id="foot-buttons">
+                <input type="submit" value="Submit"/>
+                <input type="reset" value="Clea the form"/>
+            </span>
+        </td>
+        </tfoot>
+
+    </table>
+</form>
+</body>
+</html>
