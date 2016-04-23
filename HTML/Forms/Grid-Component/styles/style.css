@@ -13,6 +13,7 @@ td,th{
 
 table{
     border-radius: 10px;
+   border-collapse: separate;
     border-spacing: 0;
     width: 880px;
     height: 393px;
