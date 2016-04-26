@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicBasic", "BasicBasic\Ba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHPVars", "PHPVars\PHPVars.csproj", "{0A1449E4-2548-4A79-9FAC-03E9B60F2C9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelevanceIndex", "RelevanceIndex\RelevanceIndex.csproj", "{51473F26-2D34-49EF-A326-D02FBF113D7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0A1449E4-2548-4A79-9FAC-03E9B60F2C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A1449E4-2548-4A79-9FAC-03E9B60F2C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A1449E4-2548-4A79-9FAC-03E9B60F2C9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51473F26-2D34-49EF-A326-D02FBF113D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51473F26-2D34-49EF-A326-D02FBF113D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51473F26-2D34-49EF-A326-D02FBF113D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51473F26-2D34-49EF-A326-D02FBF113D7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
