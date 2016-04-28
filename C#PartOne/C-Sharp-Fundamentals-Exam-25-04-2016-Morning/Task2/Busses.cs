@@ -13,7 +13,7 @@ class Task2
             busses[i] = int.Parse(Console.ReadLine());
         }
 
-        int groups = 0;
+        int groups = 1;
 
         for (int i = 1; i < busses.Length; i++)
         {
