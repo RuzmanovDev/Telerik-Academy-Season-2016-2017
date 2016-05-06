@@ -9,36 +9,24 @@
             string firstLine = Console.ReadLine();
             string secondLine = Console.ReadLine();
 
-            char[] firstSymbols = firstLine.ToCharArray();
-            char[] secondSybols = secondLine.ToCharArray();
+            firstLine = firstLine.ToLower();
+            secondLine = secondLine.ToLower();
 
-            if (firstSymbols.Length > secondSybols.Length)
+            for (int i = 0; i < Math.Min(firstLine.Length,secondLine.Length); i++)
             {
-                Console.WriteLine(">");
-            }
-            else if (firstSymbols.Length < secondSybols.Length)
-            {
-                Console.WriteLine("<");
-            }
-            else
-            {
-                for (int i = 0; i < firstSymbols.Length; i++)
+                if (firstLine[i] > secondLine[i])
                 {
-                    if (firstSymbols[i]>secondSybols[i])
-                    {
-                        Console.WriteLine(">");
-                        return;
-                    }
-                    else if (firstSymbols[i]<secondSybols[i])
-                    {
-                        Console.WriteLine("<");
-                        return;
-                    }
+                    Console.WriteLine(">");
+                    return;
                 }
-
-                Console.WriteLine("=");
+                else if (firstLine[i] < secondLine[i])
+                {
+                    Console.WriteLine("<");
+                    return;
+                }
             }
-
+            Console.WriteLine("=");
         }
+
     }
 }
