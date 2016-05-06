@@ -1,0 +1,68 @@
+table,tr ,td th,body{
+    margin: 0;
+    padding:0;
+}
+/*body{
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+}*/
+table{
+    width:335px;
+    height: 205px;
+}
+table, tr ,td,th{
+    border-collapse: collapse;
+    background-color: #595959;
+
+}
+
+#table-header{
+    color: #BBBBBB;
+    text-align: left;
+    font-family: Arial;
+    font-weight: 100;
+    padding: 7px 15px 8px 3px;
+    font-size:17px;
+
+}
+.field-names{
+    color: #FFF8F3;
+    font-family: Arial;
+    padding: 7px 15px 8px 3px;
+    font-size: 12px;
+    font-style: italic;
+    width: 100px;
+    vertical-align: top;
+    text-align: left;
+
+}
+.content{
+    padding: 7px 15px 8px 3px;
+    font-family:Arial;
+    font-size: 12px;
+    color:#BBBBBB;
+    vertical-align: top;
+    text-align: left;
+    letter-spacing: 0.05em;
+}
+.content.special-fields{
+    color:#FFF2B3;
+}
+.error{
+    color: #FF0000;
+}
+#status{
+    color: #E56D2A;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 7px 15px 8px 3px;
+}
+#status-icon{
+    background-image: url("greenDot.png");
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+#last-action-value{
+    margin-bottom: 5px;
+}

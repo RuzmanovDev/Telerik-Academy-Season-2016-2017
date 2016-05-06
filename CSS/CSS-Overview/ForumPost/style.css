@@ -1,0 +1,57 @@
+h1, head, ul, section, article, footer {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #A9A9A9;
+}
+
+h1, header {
+    color: #FAFAD2;
+}
+
+#main-header {
+    text-align: center;
+}
+
+.article-headers {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+ul {
+    text-decoration: none;
+    text-align: center;
+}
+
+a.navigation {
+    text-decoration: none;
+    color: #FAFAD2;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navigation {
+    margin: 5px;
+}
+
+a.navigation:hover {
+    background-color: #D5D3D3;
+}
+
+li.navigation:last-child {
+    text-decoration: underline;
+}
+
+.article-footers {
+    font-size: 0.8em;
+}
+
+#page-footer {
+    text-align: center;
+}
+
+#main-content {
+    margin-top: 15px;
+}

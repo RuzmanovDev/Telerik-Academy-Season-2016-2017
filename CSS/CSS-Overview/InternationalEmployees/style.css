@@ -1,0 +1,95 @@
+table, tr, td, th, body, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+tr:nth-child(2n) {
+    background-color: #ECECD8;
+}
+
+th {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5ec306+0,4eb206+100 */
+    background: rgb(94, 195, 6); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(94, 195, 6, 1) 0%, rgba(78, 178, 6, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(94, 195, 6, 1) 0%, rgba(78, 178, 6, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(94, 195, 6, 1) 0%, rgba(78, 178, 6, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5ec306', endColorstr='#4eb206', GradientType=0); /* IE6-9 */
+
+    font-family: Arial;
+    color: white;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 100;
+    height: 23px;
+}
+
+table {
+    width: 453px;
+}
+
+table, th {
+    border-collapse: collapse;
+    border: 1px solid #3C8D0F;
+    border-top: 0;
+}
+
+td {
+    border: 1px solid #D5D4C2;
+}
+
+td {
+    height: 27px;
+}
+
+tr, td, th {
+    padding-left: 7px;
+}
+
+#germany {
+    background-image: url("germany.png");
+    background-repeat: no-repeat;
+    background-position: 8% 50%;
+    padding-left: 35px
+}
+
+#mexico {
+    background-image: url("mexico.png");
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: 8% 50%;
+    padding-left: 35px
+}
+
+#mexico2 {
+    background-image: url("mexico.png");
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: 8% 50%;
+    padding-left: 35px
+}
+
+#uk {
+    background-image: url("uk.png");
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: 8% 50%;
+    padding-left: 35px
+}
+
+th#contact-name {
+    width: 131px;
+}
+
+th#city {
+    width: 100px;
+}
+
+th#country {
+    width: 117px;
+}
