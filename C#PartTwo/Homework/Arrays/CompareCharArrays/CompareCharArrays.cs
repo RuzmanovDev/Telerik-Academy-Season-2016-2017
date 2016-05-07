@@ -9,9 +9,6 @@
             string firstLine = Console.ReadLine();
             string secondLine = Console.ReadLine();
 
-            firstLine = firstLine.ToLower();
-            secondLine = secondLine.ToLower();
-
             for (int i = 0; i < Math.Min(firstLine.Length,secondLine.Length); i++)
             {
                 if (firstLine[i] > secondLine[i])
@@ -25,8 +22,19 @@
                     return;
                 }
             }
-            Console.WriteLine("=");
-        }
 
+            if (firstLine.Length == secondLine.Length)
+            {
+                Console.WriteLine("=");
+            }
+            else if (firstLine.Length < secondLine.Length)
+            {
+                Console.WriteLine("<");
+            }
+            else if (firstLine.Length > secondLine.Length)
+            {
+                Console.WriteLine(">");
+            }
+        }
     }
 }

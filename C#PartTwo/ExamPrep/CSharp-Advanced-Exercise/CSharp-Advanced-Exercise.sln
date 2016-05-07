@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicWords", "MagicWords\Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecodeAndDecrypt", "DecodeAndDecrypt\DecodeAndDecrypt.csproj", "{86B3E060-D772-44D2-9E08-65E4760EB671}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovingLetters", "MovingLetters\MovingLetters.csproj", "{FFD62828-46EA-48A1-B04C-074754894B46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zerg", "Zerg\Zerg.csproj", "{B9DC3847-65F2-4D8E-88DA-1540755A31D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{86B3E060-D772-44D2-9E08-65E4760EB671}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86B3E060-D772-44D2-9E08-65E4760EB671}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86B3E060-D772-44D2-9E08-65E4760EB671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFD62828-46EA-48A1-B04C-074754894B46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD62828-46EA-48A1-B04C-074754894B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD62828-46EA-48A1-B04C-074754894B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD62828-46EA-48A1-B04C-074754894B46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9DC3847-65F2-4D8E-88DA-1540755A31D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9DC3847-65F2-4D8E-88DA-1540755A31D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9DC3847-65F2-4D8E-88DA-1540755A31D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9DC3847-65F2-4D8E-88DA-1540755A31D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
