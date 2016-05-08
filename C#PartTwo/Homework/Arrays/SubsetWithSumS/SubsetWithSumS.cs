@@ -3,13 +3,13 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     class SubsetWithSumS
     {
         static void Main(string[] args)
         {
+
+            // GARMI AKO NQMA SUMA!!!
             int[] numbers = Console.ReadLine().Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
             int sum = int.Parse(Console.ReadLine());
 
