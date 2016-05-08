@@ -37,11 +37,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.RemoveElementsFromArray"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16.SubsetWithSumS", "SubsetWithSumS\16.SubsetWithSumS.csproj", "{DA121588-1A3E-4A61-84B0-7D805121FE71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PermutationsOfSet", "PermutationsOfSet\PermutationsOfSet.csproj", "{2884C5A8-C2A1-4C83-BFBE-3152317E4851}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19.PermutationsOfSet", "PermutationsOfSet\19.PermutationsOfSet.csproj", "{2884C5A8-C2A1-4C83-BFBE-3152317E4851}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariationOfSet", "VariationOfSet\VariationOfSet.csproj", "{1CC54EFD-D8D6-4739-ADD9-943D48B8A411}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20.VariationOfSet", "VariationOfSet\20.VariationOfSet.csproj", "{1CC54EFD-D8D6-4739-ADD9-943D48B8A411}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombinationsOfSet", "CombinationsOfSet\CombinationsOfSet.csproj", "{CA9DA602-5E20-43B9-9225-67E985E93420}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21.CombinationsOfSet", "CombinationsOfSet\21.CombinationsOfSet.csproj", "{CA9DA602-5E20-43B9-9225-67E985E93420}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17.SubsetKWithSumS", "SubsetKWithSumS\17.SubsetKWithSumS.csproj", "{E42B8BFB-B777-4BC0-BE95-FE17B799BB9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{CA9DA602-5E20-43B9-9225-67E985E93420}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA9DA602-5E20-43B9-9225-67E985E93420}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA9DA602-5E20-43B9-9225-67E985E93420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E42B8BFB-B777-4BC0-BE95-FE17B799BB9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E42B8BFB-B777-4BC0-BE95-FE17B799BB9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E42B8BFB-B777-4BC0-BE95-FE17B799BB9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E42B8BFB-B777-4BC0-BE95-FE17B799BB9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

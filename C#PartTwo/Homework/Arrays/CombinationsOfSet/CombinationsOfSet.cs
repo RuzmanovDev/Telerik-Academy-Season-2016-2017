@@ -2,7 +2,7 @@
 {
     using System;
 
-    class Program
+    class CombinationsOfSet
     {
 
         static int N = int.Parse(Console.ReadLine());
