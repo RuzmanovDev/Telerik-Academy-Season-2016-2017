@@ -11,9 +11,9 @@
             string[] text = Console.ReadLine()
                 .Split(new char[] { ' ', ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-             var sorted = Sort(text);
+            var sorted = Sort(text);
 
-             // var sorted = text.OrderBy(t => t.Length);
+            // var sorted = text.OrderBy(t => t.Length);
             foreach (var word in sorted)
             {
                 Console.WriteLine(word);
