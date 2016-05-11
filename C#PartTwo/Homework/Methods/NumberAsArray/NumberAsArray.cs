@@ -51,7 +51,7 @@
                     currentDigit = currentSum /= 10; // remove the last digit of the sum 
                     transition = currentDigit; // add the first digit of the sum to the  transition
 
-                    if (i == firstArray.Count - 1 && transition != 0) // If we have two transitions example 99 + 99
+                    if (i == firstArray.Count - 1 && transition != 0) // If we have two or more transitions example 99 + 99
                     {
                         result.Add(transition);
                     }
