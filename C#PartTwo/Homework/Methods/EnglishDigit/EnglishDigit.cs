@@ -2,9 +2,9 @@
 {
     using System;
 
-    class EnglishDigit
+    public class EnglishDigit
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int number = int.Parse(Console.ReadLine());
             string lastDigit = GetLastDigitInEnglish(number);

@@ -2,10 +2,10 @@
 {
     using System;
     using System.Linq;
- 
-    class AppearanceCount
+
+    public class AppearanceCount
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int arraySize = int.Parse(Console.ReadLine());
 

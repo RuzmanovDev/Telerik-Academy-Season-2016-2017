@@ -3,9 +3,9 @@
     using System;
     using System.Linq;
 
-    class GetLargestNumber
+    public class GetLargestNumber
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int[] numbers = Console.ReadLine()
                 .Split(' ')

@@ -3,11 +3,10 @@
     using System;
     using System.Linq;
 
-    class SubstractingPolinomials
+    public class SubstractingPolinomials
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-
             string n = Console.ReadLine();
 
             int[] firstNumbers = Console.ReadLine()
@@ -22,18 +21,19 @@
             for (int i = 0; i < secondNumbers.Length; i++)
             {
                 int result = 0;
-                if ((firstNumbers[i]<0 && 0<secondNumbers[i])
-                    || (firstNumbers[i]>0 && 0>secondNumbers[i]))
+                if ((firstNumbers[i] < 0 && 0 < secondNumbers[i])
+                    || (firstNumbers[i] > 0 && 0 > secondNumbers[i]))
                 {
                     result = firstNumbers[i] + secondNumbers[i];
                 }
                 else
                 {
                     result = firstNumbers[i] - secondNumbers[i];
-
                 }
-                Console.Write("{0} ",result);
+
+                Console.Write("{0} ", result);
             }
+
             Console.WriteLine();
         }
     }

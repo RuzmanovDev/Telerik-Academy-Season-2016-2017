@@ -3,9 +3,9 @@
     using System;
     using System.Linq;
 
-    class FirstLargerThanNeighbour
+    public class FirstLargerThanNeighbour
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
 
@@ -16,9 +16,9 @@
             int firstLargerThanNeighbourIndex = FirstLargerThanNeighbourIndex(numbers);
 
             Console.WriteLine(firstLargerThanNeighbourIndex);
-
         }
-        static int FirstLargerThanNeighbourIndex(int[] numbers)
+
+        private static int FirstLargerThanNeighbourIndex(int[] numbers)
         {
             int firstLargerThanNeighbourIndex = -1;
 
@@ -29,16 +29,14 @@
                 if (i != 0
                     && i < numbers.Length - 1
                     && numbers[i - 1] < currentNumber
-                    && currentNumber > numbers[i + 1]
-                    )
+                    && currentNumber > numbers[i + 1])
                 {
                     firstLargerThanNeighbourIndex = i;
                     break;
                 }
-
             }
+
             return firstLargerThanNeighbourIndex;
         }
     }
 }
-

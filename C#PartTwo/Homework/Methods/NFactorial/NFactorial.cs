@@ -3,9 +3,9 @@
     using System;
     using System.Numerics;
 
-    class NFactorial
+    public class NFactorial
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
 
@@ -21,6 +21,7 @@
             {
                 factorial *= i;
             }
+
             return factorial;
         }
     }

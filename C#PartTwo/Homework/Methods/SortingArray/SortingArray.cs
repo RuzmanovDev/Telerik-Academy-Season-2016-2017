@@ -3,9 +3,9 @@
     using System;
     using System.Linq;
 
-    class SortingArray
+    public class SortingArray
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string size = Console.ReadLine();
 
@@ -15,8 +15,6 @@
                 .ToArray();
 
             Sort(numbers);
-
-
             Console.WriteLine(string.Join(" ", numbers));
         }
 
@@ -33,8 +31,10 @@
                     maxIndex = i;
                 }
             }
+
             return maxIndex;
         }
+
         private static void Sort(int[] numbers)
         {
             int i = 0;
@@ -48,9 +48,10 @@
                     numbers[lastIndex - i] = numbers[currentMaxIndex];
                     numbers[currentMaxIndex] = temp;
                 }
+
                 i++;
             }
-            // some kind of BubleSort???
+            //// some kind of BubleSort???
         }
     }
 }

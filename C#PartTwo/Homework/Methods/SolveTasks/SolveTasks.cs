@@ -7,9 +7,9 @@
     using System.Text;
     using System.Threading;
 
-    class SolveTasks
+    public class SolveTasks
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
             Menu();
@@ -35,14 +35,13 @@
                 double b = double.Parse(Console.ReadLine());
                 double result = LinearEquationRoot(a, b);
                 Console.WriteLine("x= {0} ", result);
-
             }
             else
             {
                 Console.WriteLine("Wrong command! Please try again!");
             }
-
         }
+
         private static string Reverse(string number)
         {
             StringBuilder reversedNumber = new StringBuilder();
@@ -53,6 +52,7 @@
                 char currentChar = number[i];
                 stack.Push(currentChar);
             }
+
             while (stack.Count != 0)
             {
                 char poppedChar = stack.Pop();
@@ -61,6 +61,7 @@
 
             return reversedNumber.ToString();
         }
+
         private static void Menu()
         {
             Console.WriteLine("What do you want to do?");
@@ -70,6 +71,7 @@
             Console.WriteLine("3. Solve a linear equation  a * x + b = 0");
             Console.Write("Enter you choice: ");
         }
+
         private static double AverageOfSequence()
         {
             var seqence = Console.ReadLine()
@@ -83,9 +85,11 @@
             {
                 sum += number;
             }
+
             double average = sum / seqence.Length;
             return average;
         }
+
         private static double LinearEquationRoot(double a, double b)
         {
             //a*x+b=0 -> x= - b /a
@@ -93,11 +97,9 @@
             try
             {
                 result = -b / a;
-
             }
             catch (DivideByZeroException)
             {
-
                 Console.WriteLine("a must NOT be 0");
             }
 

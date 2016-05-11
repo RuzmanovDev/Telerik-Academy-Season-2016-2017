@@ -3,9 +3,9 @@
     using System;
     using System.Linq;
 
-    class AddingPolynomials
+    public class AddingPolynomials
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string n = Console.ReadLine();
 
@@ -22,8 +22,8 @@
             {
                 Console.Write("{0} ", firstNumbers[i] + secondNumbers[i]);
             }
+
             Console.WriteLine();
         }
     }
 }
-

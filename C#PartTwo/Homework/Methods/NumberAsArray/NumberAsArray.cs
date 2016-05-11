@@ -4,9 +4,9 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    class NumberAsArray
+    public class NumberAsArray
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int[] sizes = Console.ReadLine()
                 .Split(' ')
@@ -21,13 +21,13 @@
             var firstArray = InitialiseIntarray(inputForFirstArray, maxSize);
             var secondArray = InitialiseIntarray(inpuForSecondArray, maxSize);
 
-
             var result = SumLists(firstArray, secondArray);
 
             foreach (var number in result)
             {
                 Console.Write(number + " ");
             }
+
             Console.WriteLine();
         }
 
@@ -60,6 +60,7 @@
 
             return result;
         }
+
         private static List<int> InitialiseIntarray(string input, int size)
         {
             List<int> array = new List<int>();

@@ -4,9 +4,9 @@
     using System.Linq;
     using System.Numerics;
 
-    class Calculations
+    public class Calculations
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             var numbers = Console.ReadLine()
                 .Split(' ')
@@ -26,7 +26,6 @@
             Console.WriteLine(prodcut);
         }
 
- 
         private static BigInteger Product(int[] numbers)
         {
             BigInteger product = 1;
@@ -35,9 +34,8 @@
             {
                 product *= num;
             }
+
             return product;
         }
-
     }
 }
-

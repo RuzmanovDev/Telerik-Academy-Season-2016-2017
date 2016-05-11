@@ -29,7 +29,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.SubstractingPolinomials"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.Calculations", "Calculations\14.Calculations.csproj", "{D1E0671A-B858-4DFC-8170-FEDD5E08D4DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveTasks", "SolveTasks\SolveTasks.csproj", "{9999DC44-BADF-473E-86BA-5FC0F8BA7BFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.SolveTasks", "SolveTasks\13.SolveTasks.csproj", "{9999DC44-BADF-473E-86BA-5FC0F8BA7BFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

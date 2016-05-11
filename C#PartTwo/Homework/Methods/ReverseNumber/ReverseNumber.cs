@@ -4,9 +4,9 @@
     using System.Collections.Generic;
     using System.Text;
 
-    class ReverseNumber
+    public class ReverseNumber
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string number = Console.ReadLine();
 
@@ -24,6 +24,7 @@
                 char currentChar = number[i];
                 stack.Push(currentChar);
             }
+
             while (stack.Count != 0)
             {
                 char poppedChar = stack.Pop();
