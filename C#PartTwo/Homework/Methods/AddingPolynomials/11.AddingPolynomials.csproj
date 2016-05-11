@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2539E947-3D62-435B-9AC1-BB8D432CDE32}</ProjectGuid>
+    <ProjectGuid>{8BAE021B-A171-4491-BB65-2E49396F9003}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SortingArray</RootNamespace>
-    <AssemblyName>SortingArray</AssemblyName>
+    <RootNamespace>AddingPolynomials</RootNamespace>
+    <AssemblyName>AddingPolynomials</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SortingArray.cs" />
+    <Compile Include="AddingPolynomials.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
