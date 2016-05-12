@@ -9,42 +9,56 @@
         static int[,] matrix;
         static int counter = 0;
         static int maxCounter = 0;
+        static int rows; // .getLength is slow if it is out of a cycle!!!!
+        static int cols;
 
-        static void DFS(int row, int col, int element)
+        private static bool IsValidCell(int row, int col)
         {
-            if (row < 0 || col < 0 || row >= matrix.GetLength(0) || col >= matrix.GetLength(1))
+            if (row < 0 || col < 0 || row >= rows || col >= cols || visited[row, col])
             {
-                return;
-            }
-
-            if (visited[row, col])
-            {
-                return;
-            }
-
-            visited[row, col] = true;
-
-            if (matrix[row, col] == element)
-            {
-                counter++;
+                return false;
             }
             else
             {
-                return;
+                return true;
             }
+        }
 
-            DFS(row, col - 1, element);
-            DFS(row - 1, col, element);
-            DFS(row, col + 1, element);
-            DFS(row + 1, col, element);
+        static void DFS(int row, int col, int element)
+        {
+            if (matrix[row, col] == element)
+            {
+                counter++;
+                visited[row, col] = true;
+
+                if (IsValidCell(row, col - 1))
+                {
+                    DFS(row, col - 1, element);
+                }
+
+                if (IsValidCell(row - 1, col))
+                {
+                    DFS(row - 1, col, element);
+                }
+
+                if (IsValidCell(row, col + 1))
+                {
+                    DFS(row, col + 1, element);
+                }
+
+                if (IsValidCell(row + 1, col))
+                {
+                    DFS(row + 1, col, element);
+                }
+            }
         }
 
         static void Main(string[] args)
         {
             int[] dimentions = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
 
-            int rows = dimentions[0];
-            int cols = dimentions[1];
+            rows = dimentions[0];
+            cols = dimentions[1];
             matrix = new int[rows, cols];
             visited = new bool[rows, cols];
 
@@ -69,7 +83,7 @@
                         if (counter > maxCounter)
                         {
                             maxCounter = counter;
-                            visited = new bool[rows, cols];
+                            // visited = new bool[rows, cols];
                         }
                         counter = 0;
                     }
@@ -78,6 +92,6 @@
 
             Console.WriteLine(maxCounter);
         }
-        
+
     }
 }
