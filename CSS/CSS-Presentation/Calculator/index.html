@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="wrapper">
+    <table>
+        <thead class="menu-bar">
+        <tr>
+            <th>View</th>
+            <th>Edit</th>
+            <th colspan="8">Help</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td colspan="12">
+                <span colspan="10" class="textarea">
+                    8854455
+                </span>
+            </td>
+        </tr>
+
+        <tr class="binary-wrapper-top">
+            <td colspan="10">
+                <ul id="binary">
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>63&nbsp;&nbsp;</li>
+                    <li class="display-none">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li class="display-none">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li class="display-none">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li>47&nbsp;&nbsp;</li>
+                    <li class="display-none">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li class="display-none">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li>32&nbsp;&nbsp;</li>
+
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>1000</li>
+                    <li>0111</li>
+                    <li>0001</li>
+                    <li>1011</li>
+                    <li>1011</li>
+                    <li>0111</li>
+
+                    <li>31&nbsp;&nbsp;</li>
+                    <li class="display-none">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li class="display-none">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li class="display-none">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li class="display-none">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li>15&nbsp;&nbsp;</li>
+                    <li class="display-none">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li>0</li>
+                </ul>
+            </td>
+        </tr>
+
+        <!--main part-->
+        <tr>
+            <td colspan="2" rowspan="3">
+                <ul id="num-system">
+                    <li><input type="radio" name="numSystem" class="radio">Hex</li>
+                    <li><input type="radio" name="numSystem" class="radio" checked="checked">Dec</li>
+                    <li><input type="radio" name="numSystem" class="radio">Oct</li>
+                    <li><input type="radio" name="numSystem" class="radio">Bin</li>
+                </ul>
+            </td>
+            <td>
+                <button class="gradientButton" disabled="disabled"></button>
+            </td>
+            <td>
+                <button class="plane">Mod</button>
+            </td>
+            <td>
+                <button class="plane" disabled="disabled">A</button>
+            </td>
+            <td>
+                <button class="plane">MC</button>
+            </td>
+            <td>
+                <button class="plane">MR</button>
+            </td>
+            <td>
+                <button class="plane">MS</button>
+            </td>
+            <td>
+                <button class="plane">M+</button>
+            </td>
+            <td>
+                <button class="plane">M-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="gradientButton">(</button>
+            </td>
+            <td>
+                <button class="gradientButton">)</button>
+            </td>
+            <td>
+                <button class="plane" disabled="disabled">B</button>
+            </td>
+            <td>
+                <button class="gradientButton">&larr;</button>
+            </td>
+            <td>
+                <button class="gradientButton">CE</button>
+            </td>
+            <td>
+                <button class="gradientButton">C</button>
+            </td>
+            <td>
+                <button class="gradientButton">&plusmn;</button>
+            </td>
+            <td>
+                <button class="plane">&radic;</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="gradientButton">RoL</button>
+            </td>
+            <td>
+                <button class="gradientButton">RoR</button>
+            </td>
+            <td>
+                <button class="plane" disabled="disabled">C</button>
+            </td>
+            <td>
+                <button class="normalButtons">7</button>
+            </td>
+            <td>
+                <button class="normalButtons">8</button>
+            </td>
+            <td>
+                <button class="normalButtons">9</button>
+            </td>
+            <td>
+                <button class="gradientButton">/</button>
+            </td>
+            <td>
+                <button class="plane">%</button>
+            </td>
+        </tr>
+        <!-- secnd part -->
+        <tr>
+            <td colspan="2" rowspan="3">
+                <ul id="qwords">
+                    <li><input type="radio" name="word" class="radio" checked="checked">Qword</li>
+                    <li><input type="radio" name="word" class="radio">Dword</li>
+                    <li><input type="radio" name="word" class="radio">Word</li>
+                    <li><input type="radio" name="word" class="radio">Byte</li>
+                </ul>
+            </td>
+            <td>
+                <button class="gradientButton">Or</button>
+            </td>
+            <td>
+                <button class="gradientButton">Xor</button>
+            </td>
+            <td>
+                <button class="plane" disabled="disabled">D</button>
+            </td>
+            <td>
+                <button class="normalButtons">4</button>
+            </td>
+            <td>
+                <button class="normalButtons">5</button>
+            </td>
+            <td>
+                <button class="normalButtons">6</button>
+            </td>
+            <td>
+                <button class="normalButtons">*</button>
+            </td>
+            <td>
+                <button class="plane">1/x</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="gradientButton">Lsh</button>
+            </td>
+            <td>
+                <button class="gradientButton">Rsh</button>
+            </td>
+            <td>
+                <button class="plane" disabled="disabled">E</button>
+            </td>
+            <td>
+                <button class="normalButtons">1</button>
+            </td>
+            <td>
+                <button class="normalButtons">2</button>
+            </td>
+            <td>
+                <button class="normalButtons">3</button>
+            </td>
+            <td>
+                <button class="normalButtons">-</button>
+            </td>
+            <td rowspan="2">
+                <button class="gradientButton" id="equal">=</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="gradientButton">Not</button>
+            </td>
+            <td>
+                <button class="gradientButton">And</button>
+            </td>
+            <td>
+                <button class="plane" disabled="disabled">F</button>
+            </td>
+            <td colspan="2">
+                <button class="gradientButton" id="zero"> 0</button>
+            </td>
+            <td>
+                <button class="plane" disabled="disabled">.</button>
+            </td>
+            <td>
+                <button class="gradientButton">+</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
