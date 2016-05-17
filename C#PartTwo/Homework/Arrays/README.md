@@ -5,7 +5,7 @@ Homework: Arrays
 
 ### Problem List
 
-1. [Allocate array](./Allocate array)
+1. [Allocate array](./AllocateArray)
 1. [Compare arrays](./02. Compare arrays)
 1. [Compare char arrays](./03. Compare char arrays)
 1. [Maximal sequence](./04. Maximal sequence)
