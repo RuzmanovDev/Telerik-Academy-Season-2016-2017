@@ -1,1 +1,1 @@
-# To test these exams use PhantomJS --> [a link](https://github.com/NikolayIT/css-exam-automation) 
+# To test these exams use [PhantomJS](https://github.com/NikolayIT/css-exam-automation) 
