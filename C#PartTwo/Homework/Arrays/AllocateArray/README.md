@@ -1,17 +1,26 @@
-## 01. Arrays
-Declaring and creating arrays, Accessing array elements, Console Input/Output of arrays, Iterating over arrays using `for` and `foreach`, Dynamically resized arrays (`List<T>`), Copying arrays.
+# Allocate array
 
-## Resources
+## Description
+Write a program that allocates array of **N** integers, initializes each element by its index multiplied by `5` and the prints the obtained array on the console.
 
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="15" />Slides](https://rawgit.com/TelerikAcademy/CSharp-Part-2/master/Topics/01.%20Arrays/slides/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](homework) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/video.png" height="13"> Videos](VIDEOS.md)
+## Input
+- On the only line you will receive the number **N**
 
-### Table of Contents
-- [Declaring and Creating Arrays](slides/README.md/#declare)
-- [Accessing Array Elements](slides/README.md/#access)
-- [Console Input and Output of Arrays](slides/README.md/#inout)
-- [Iterating Over Arrays Using **for** and **foreach**](slides/README.md/#iterate)
-- Dynamic Arrays
-  - [**List &lt;T>**](slides/README.md/#lists)
-- [Copying Arrays](slides/README.md/#copy)
+## Output
+- Print the obtained array on the console.
+  - Each number should be on a new line
 
-#### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/home.png" height="20" /> home](/README.md)
+## Constraints
+- 1 <= **N** <= 20
+- **N** will always be a valid integer number
+- Time limit: **0.1s**
+- Memory limit: **16MB**
+
+## Sample tests
+
+| Input | Output |
+|:-----:|:------:|
+| 5     | 0<br>5<br>10<br>15<br>20 |
+
+## Submission
+- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/315#0)
