@@ -1,0 +1,25 @@
+#wrapper {
+  background-color: #EEEEEE;
+  width: 540px;
+h1{
+  font-weight: normal;
+  font-size:25px;
+}
+  .articles {
+    display: inline-block;
+    border: 1px solid black;
+    margin-bottom: 25px;
+    width: 500px;
+    .pictures {
+      float: left;
+      margin: 15px;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    .buttons {
+      float: right;
+      margin: 15px;
+    }
+  }
+}

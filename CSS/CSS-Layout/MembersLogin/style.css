@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#wrapper {
+  width: 680px;
+  font-family: Arial; }
+  #wrapper header {
+    height: 75px;
+    background-image: url("images/laptop.png");
+    background-position: 20px;
+    background-color: #393738;
+    background-repeat: no-repeat;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; }
+    #wrapper header form {
+      margin-left: 100px;
+      padding-top: 20px; }
+      #wrapper header form label {
+        color: white;
+        font-size: 20px;
+        font-family: Arial; }
+      #wrapper header form #sumit {
+        float: right;
+        background: none;
+        border: 0;
+        shadow: 0;
+        background-image: url("images/go.png");
+        width: 55px;
+        height: 27px;
+        margin-right: 15px; }
+        #wrapper header form #sumit:hover {
+          background-image: url("images/go-active.png"); }
+  #wrapper main {
+    background-color: #3B3B3B;
+    color: #A1A1A1;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; }
+    #wrapper main p {
+      padding: 5px; }
+      #wrapper main p strong {
+        color: #FFFFFF; }
+    #wrapper main a {
+      text-decoration: none;
+      color: #A1A1A1; }
+      #wrapper main a:hover {
+        text-decoration: underline; }
+    #wrapper main h1 {
+      padding: 5px;
+      padding-top: 20px;
+      color: #FFD51A; }
+
+/*# sourceMappingURL=style.css.map */

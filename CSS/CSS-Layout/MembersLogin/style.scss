@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#wrapper {
+  width: 650px;
+  font-family: Arial;
+  header {
+    height:75px;
+    background-image: url("images/laptop.png");
+    background-position: 20px ;
+    background-color: #393738;
+    background-repeat: no-repeat;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    form {
+      margin-left: 100px;
+      padding-top: 20px;
+      label{
+        color: white;
+        font-size: 20px;
+        font-family: Arial;
+      }
+      #sumit {
+        float: right;
+        background: none;
+        border: 0;
+        shadow: 0;
+        background-image: url("images/go.png");
+        width: 55px;
+        height: 27px;
+        margin-right: 15px;
+        &:hover {
+          background-image: url("images/go-active.png");
+        }
+      }
+    }
+  }
+  main{
+    background-color: #3B3B3B;
+    color:#A1A1A1;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    p{
+      padding: 5px;
+      strong{
+        color: #FFFFFF;
+      }
+    }
+    a{
+      text-decoration: none;
+      color: #A1A1A1;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    h1{
+      padding: 5px;
+      padding-top:20px;
+      color:#FFD51A;
+    }
+  }
+}

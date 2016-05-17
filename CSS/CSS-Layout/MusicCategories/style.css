@@ -1,0 +1,21 @@
+#wrapper {
+  background-color: #EEEEEE;
+  width: 540px; }
+  #wrapper h1 {
+    font-weight: normal;
+    font-size: 25px; }
+  #wrapper .articles {
+    display: inline-block;
+    border: 1px solid black;
+    margin-bottom: 25px;
+    width: 500px; }
+    #wrapper .articles .pictures {
+      float: left;
+      margin: 15px; }
+    #wrapper .articles .bold {
+      font-weight: bold; }
+    #wrapper .articles .buttons {
+      float: right;
+      margin: 15px; }
+
+/*# sourceMappingURL=style.css.map */

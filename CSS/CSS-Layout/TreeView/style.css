@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.sub-menu {
+  display: none; }
+  .sub-menu a {
+    color: gray; }
+
+ul {
+  margin: 10px;
+  list-style-type: none; }
+  ul li a {
+    text-decoration: none;
+    color: black; }
+  ul li:hover .sub-menu {
+    display: block; }
+  ul li:hover > a {
+    text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */

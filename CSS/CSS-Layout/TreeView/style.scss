@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+.sub-menu {
+  display: none;
+  a{
+    color:gray;
+  }
+}
+
+ul {
+  margin: 10px;
+  list-style-type: none;
+  li {
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    &:hover {
+      .sub-menu {
+        display: block;
+      }
+      & > a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+.clear-fix {
+  clear: both; }
+
+#wrapper {
+  width: 1080px;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: Arial;
+  font-size: 25px; }
+  #wrapper header {
+    text-align: center;
+    margin-left: 25px;
+    width: 95%;
+    border-bottom: 2px solid black; }
+    #wrapper header ul {
+      list-style-type: none; }
+      #wrapper header ul li {
+        display: inline-block; }
+        #wrapper header ul li a {
+          font-family: Arial;
+          font-weight: bold;
+          font-size: 30px;
+          color: #00ADF0; }
+  #wrapper main #content {
+    float: left;
+    display: inline-block;
+    width: 740px;
+    margin: 10px;
+    border: 2px solid black; }
+    #wrapper main #content .laptop {
+      border: 2px solid black;
+      width: 305px;
+      display: inline-block;
+      margin-left: 10px;
+      margin-bottom: 15px;
+      height: 210px; }
+      #wrapper main #content .laptop legend {
+        margin-left: 40px; }
+      #wrapper main #content .laptop img {
+        float: left; }
+      #wrapper main #content .laptop .price-processor {
+        margin-left: 30px; }
+        #wrapper main #content .laptop .price-processor .processor {
+          margin-left: 15px; }
+  #wrapper #sliders {
+    display: inline-block;
+    padding-top: 100px;
+    padding-left: 25px; }
+    #wrapper #sliders label {
+      display: block;
+      font-family: Arial;
+      font-size: 28px; }
+    #wrapper #sliders .sliders {
+      margin-bottom: 25px;
+      display: block; }
+
+/*# sourceMappingURL=style.css.map */
