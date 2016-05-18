@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoGirlsOnePath", "TwoGirls
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreedyDwarf", "GreedyDwarf\GreedyDwarf.csproj", "{B8B79E41-A903-4286-8F6E-126EE38C2A7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRES4Numbers", "TRES4Numbers\TRES4Numbers.csproj", "{8895C77A-0434-44C9-9E9C-C2F80969A8EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{B8B79E41-A903-4286-8F6E-126EE38C2A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8B79E41-A903-4286-8F6E-126EE38C2A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8B79E41-A903-4286-8F6E-126EE38C2A7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8895C77A-0434-44C9-9E9C-C2F80969A8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8895C77A-0434-44C9-9E9C-C2F80969A8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8895C77A-0434-44C9-9E9C-C2F80969A8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8895C77A-0434-44C9-9E9C-C2F80969A8EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
