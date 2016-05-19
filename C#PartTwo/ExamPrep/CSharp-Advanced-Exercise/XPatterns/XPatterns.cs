@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace XPatterns
+﻿namespace XPatterns
 {
+    using System;
+    
     class XPatterns
     {
         static void Main(string[] args)
@@ -24,25 +20,19 @@ namespace XPatterns
 
             long maxSum = long.MinValue;
             bool found = false;
-            for (int row = 0; row <= matrix.GetLength(0) - 2; row++)
+            for (int row = 0; row < matrix.GetLength(0) - 2; row++)
             {
-                long sum = 0;
-                for (int col = 0; col <= matrix.GetLength(1) - 4; col++)
+                //long sum = 0;
+                for (int col = 0; col < matrix.GetLength(1) - 4; col++)
                 {
                     if (matrix[row, col] + 1 == matrix[row, col + 1] && matrix[row, col] + 2 == matrix[row, col + 2]
                         && matrix[row, col + 2] + 1 == matrix[row + 1, col + 2] && matrix[row, col + 2] + 2 == matrix[row + 2, col + 2]
                         && matrix[row + 2, col + 2] + 1 == matrix[row + 2, col + 3] && matrix[row + 2, col + 2] + 2 == matrix[row + 2, col + 4])
                     {
                         found = true;
-                        sum += matrix[row, col];
-                        sum += matrix[row, col + 1];
-                        sum += matrix[row, col + 2];
-                        sum += matrix[row + 1, col + 2];
-                        sum += matrix[row + 2, col + 2];
-                        sum += matrix[row + 2, col + 3];
-                        sum += matrix[row + 2, col + 4];
+                        long sum = CalculateSum(matrix, row, col);
+                        maxSum = Math.Max(sum, maxSum);
                     }
-                    maxSum = Math.Max(sum, maxSum);
                 }
             }
             if (!found)
@@ -70,6 +60,18 @@ namespace XPatterns
                 r++;
                 c++;
             }
+            return sum;
+        }
+        static long CalculateSum(long[,] matrix, int row, int col)
+        {
+            long sum = 0;
+            sum += matrix[row, col];
+            sum += matrix[row, col + 1];
+            sum += matrix[row, col + 2];
+            sum += matrix[row + 1, col + 2];
+            sum += matrix[row + 2, col + 2];
+            sum += matrix[row + 2, col + 3];
+            sum += matrix[row + 2, col + 4];
             return sum;
         }
     }
