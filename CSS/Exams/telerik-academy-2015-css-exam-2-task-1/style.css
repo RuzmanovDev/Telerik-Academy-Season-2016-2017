@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+label {
+  display: inline-block; }
+
+#root {
+  width: 960px;
+  font-family: Arial;
+  font-size: 14px;
+  color: #B3E5F9; }
+  #root ul.avengers {
+    margin-top: 10px;
+    margin-left: 10px;
+    list-style-type: none;
+    background-color: #205D99;
+    width: 500px; }
+    #root ul.avengers li {
+      border-bottom: 1px solid #B3E5F9;
+      text-align: center; }
+      #root ul.avengers li label {
+        text-align: center;
+        font-size: 1.7em;
+        font-weight: bold;
+        color: #FFF; }
+      #root ul.avengers li .preview {
+        display: none; }
+        #root ul.avengers li .preview img {
+          float: left;
+          width: 200px;
+          height: 112px;
+          padding: 15px;
+          background-color: #79AEE3;
+          border-radius: 10px;
+          margin-right: 15px;
+          margin-bottom: 15px; }
+        #root ul.avengers li .preview p {
+          margin: 5px;
+          text-align: justify;
+          padding-right: 12px; }
+      #root ul.avengers li input {
+        display: none; }
+        #root ul.avengers li input:checked + label {
+          color: #AECFEE;
+          display: block; }
+          #root ul.avengers li input:checked + label + .preview {
+            display: block; }
+
+/*# sourceMappingURL=main.css.map */
