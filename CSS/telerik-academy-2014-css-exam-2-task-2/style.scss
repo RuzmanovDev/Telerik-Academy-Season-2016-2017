@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  width: 960px;
+  font-size: 16px;
+  font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+  ul {
+    margin-top: 5px;
+    margin-left: 5px;
+    list-style-type: none;
+    height: 180px;
+    li {
+      display: inline-block;
+      border: 20px solid #808080;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#727272+0,ffffff+100 */
+      background: rgb(114, 114, 114); /* Old browsers */
+      background: -moz-linear-gradient(top, rgba(114, 114, 114, 1) 0%, rgba(255, 255, 255, 1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(114, 114, 114, 1) 0%, rgba(255, 255, 255, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(114, 114, 114, 1) 0%, rgba(255, 255, 255, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#727272', endColorstr='#ffffff', GradientType=0); /* IE6-9 */
+
+      padding-left: 30px;
+      padding-right: 30px;
+      h3 {
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .image-container {
+        display: inline-block;
+        img {
+          width: 120px;
+          height: 100px;
+          border-radius: 15px;
+        }
+      }
+      .subtitle {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+      .click-here {
+        display: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+      &:hover {
+        border-color: #454545;
+        background: none;
+        background-color: #808080;
+        padding: 0 20px 0 20px;
+        img {
+          width: 140px;
+          height: 120px;
+        }
+        h3 {
+          padding: 0;
+          text-decoration: underline;
+        }
+        .subtitle {
+          display: none;
+        }
+        .click-here {
+          padding-top: 0;
+          display: block;
+          text-transform: uppercase;
+          color: #FFF;
+        }
+      }
+    }
+  }
+}
