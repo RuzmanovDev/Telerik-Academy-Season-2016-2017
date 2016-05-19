@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreedyDwarf", "GreedyDwarf\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRES4Numbers", "TRES4Numbers\TRES4Numbers.csproj", "{8895C77A-0434-44C9-9E9C-C2F80969A8EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BunnyFactory", "BunnyFactory\BunnyFactory.csproj", "{78C5126F-D601-4222-9E64-2481D32051C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPatterns", "XPatterns\XPatterns.csproj", "{A68341E6-7DA7-4BD2-8986-D26894ED930E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{8895C77A-0434-44C9-9E9C-C2F80969A8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8895C77A-0434-44C9-9E9C-C2F80969A8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8895C77A-0434-44C9-9E9C-C2F80969A8EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C5126F-D601-4222-9E64-2481D32051C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C5126F-D601-4222-9E64-2481D32051C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C5126F-D601-4222-9E64-2481D32051C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C5126F-D601-4222-9E64-2481D32051C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A68341E6-7DA7-4BD2-8986-D26894ED930E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A68341E6-7DA7-4BD2-8986-D26894ED930E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A68341E6-7DA7-4BD2-8986-D26894ED930E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A68341E6-7DA7-4BD2-8986-D26894ED930E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
