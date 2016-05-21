@@ -11,9 +11,8 @@ namespace BunnyFactory
     {
         static void Main(string[] args)
         {
-            int N = int.Parse(Console.ReadLine());
             List<BigInteger> cages = new List<BigInteger>();
-            cages.Add(N);
+           
             int cycles = 1;
 
             while (true)
@@ -30,10 +29,6 @@ namespace BunnyFactory
             // multiplication proccess
             while (true)
             {
-                if (cycles > cages.Count)
-                {
-                    break;
-                }
                 BigInteger sum = 0;
                 int i = 0;
 
@@ -83,9 +78,32 @@ namespace BunnyFactory
                 cages.RemoveAll(n => n == 0 || n == 1);
                 // end of the first cycle
                 cycles++;
+                Seperae(cages);
             }
 
             Console.WriteLine(string.Join(" ", cages));
+        }
+
+        private static void Seperae(List<BigInteger> cages)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            for (int i = 0; i < cages.Count; i++)
+            {
+                BigInteger num = cages[i];
+                while (num != 0)
+                {
+                    int residual = (int)(num % 10);
+                    sb.Append(residual);
+                    num /= 10;
+                }
+            }
+
+            cages.Clear();
+            foreach (var num in sb.ToString())
+            {
+                cages.Add(BigInteger.Parse(num.ToString()));
+            }
         }
     }
 }
