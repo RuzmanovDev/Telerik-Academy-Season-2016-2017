@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.content {
+  display: none; }
+  .content ul li {
+    background-color: #008000; }
+
+.sub-menu {
+  position: absolute;
+  left: 165px;
+  top: 0;
+  list-style-type: none; }
+  .sub-menu li {
+    text-align: left; }
+    .sub-menu li img {
+      display: none;
+      width: 500px;
+      border-radius: 35px;
+      padding: 20px; }
+    .sub-menu li a {
+      display: none; }
+      .sub-menu li a:hover + img {
+        display: block; }
+
+#wrapper {
+  width: 960px;
+  font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+  font-size: 16px; }
+  #wrapper .menu {
+    list-style-type: none;
+    width: 170px; }
+    #wrapper .menu li {
+      position: relative;
+      width: 170px;
+      border-radius: 15px;
+      padding: 10px 0;
+      background-color: #B6FF00;
+      margin: 8px;
+      text-align: center; }
+      #wrapper .menu li a {
+        text-decoration: none;
+        color: black; }
+      #wrapper .menu li:hover {
+        text-decoration: underline; }
+        #wrapper .menu li:hover .content {
+          display: inline-block; }
+          #wrapper .menu li:hover .content .sub-menu li {
+            text-align: left;
+            background-color: #008000;
+            display: block;
+            width: 540px; }
+          #wrapper .menu li:hover .content .sub-menu a {
+            padding: 15px;
+            display: block;
+            color: #FFF; }
+
+/*# sourceMappingURL=style.css.map */

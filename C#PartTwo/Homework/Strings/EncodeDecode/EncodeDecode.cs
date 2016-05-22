@@ -24,15 +24,18 @@ namespace EncodeDecode
         {
             StringBuilder encodedText = new StringBuilder();
 
-            // TODO: if cipher or the text have bigger length BOOM
             int forCycleCount = Math.Max(text.Length, cipher.Length);
-            for (int i = 0; i < forCycleCount; i++)
+            for (int i = 0, j = 0; i < forCycleCount; i++, j++)
             {
-                if (i >= text.Length || i >= cipher.Length)
+                if (i >= text.Length)
                 {
                     i = 0;
                 }
-                char encodedChar = (char)(text[i] ^ cipher[i]);
+                if (j >= cipher.Length)
+                {
+                    j = 0;
+                }
+                char encodedChar = (char)(text[i] ^ cipher[j]);
                 encodedText.Append(encodedChar);
             }
 

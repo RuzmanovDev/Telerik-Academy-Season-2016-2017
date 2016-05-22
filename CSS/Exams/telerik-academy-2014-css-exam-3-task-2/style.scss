@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: none;
+  ul {
+    li {
+      background-color: #008000;
+    }
+  }
+}
+
+.sub-menu {
+  position: absolute;
+  left: 165px;
+  top: 0;
+  list-style-type: none;
+  li {
+    text-align: left;
+    img {
+      display: none;
+      width: 500px;
+      border-radius: 35px;
+      padding: 20px;
+    }
+    a {
+      display: none;
+      &:hover {
+        + img {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+#wrapper {
+  width: 960px;
+  font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+  font-size: 16px;
+  .menu {
+    list-style-type: none;
+    width: 170px;
+    li {
+      position: relative;
+      width: 170px;
+      border-radius: 15px;
+      padding: 10px 0;
+      background-color: #B6FF00;
+      margin: 8px;
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      &:hover {
+        text-decoration: underline;
+        .content {
+          display: inline-block;
+          .sub-menu {
+            li {
+              text-align: left;
+              background-color: #008000;
+              display: block;
+              width: 540px;
+            }
+            a {
+              padding: 15px;
+              display: block;
+              color: #FFF;
+            }
+          }
+        }
+      }
+    }
+  }
+}

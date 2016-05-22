@@ -23,12 +23,16 @@ namespace ExtractSentences
 
             var seperateSentences = text.Split('.');
 
+            char[] separator = text.Where(x => !char.IsLetter(x) && x != '.') // Add separator if it is not a letter or '.'.
+                             .Distinct() // Remove repeated characters.
+                             .ToArray(); // Add separators in array.
+
             for (int i = 0; i < seperateSentences.Length; i++)
             {
                 string currentSentence = seperateSentences[i];
-                var seperator = currentSentence.Where(c => !char.IsLetterOrDigit(c)).Select(t => t).ToArray();
+               
 
-                var splittedCurrentSentence = currentSentence.Split(seperator);
+                var splittedCurrentSentence = currentSentence.Split(separator);
                 foreach (var wordInSentence in splittedCurrentSentence)
                 {
                     if (word == wordInSentence)
