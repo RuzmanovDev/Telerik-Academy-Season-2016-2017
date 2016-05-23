@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.preview {
+    display: none;
+    background-color: #CCCCCC;
+    position: absolute;
+    top: 40px;
+    left: 3px;
+    width: 630px;
+    height: 270px;
+    border: 3px solid black;
+    img{
+        float: left;
+        width: 400px;
+        height: 225px;
+        border:5px solid #FFFFFF;
+        margin-top: 15px;
+        margin-left: 15px;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+    }
+    ul.skills{
+        float: right;
+        list-style-type: none;
+        margin-right: 30px;
+        li{
+            margin-top: 17px;
+            padding: 33px 42px 0px 24px;
+            border: 0;
+            text-transform: capitalize;
+            font-size: 1.2em;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+#root {
+    font-family: "Times New Roman";
+    font-size: 16px;
+    color: #000000;
+    ul.avengers {
+        position: relative;
+        list-style: none;
+        li.avenger {
+            display: inline-block;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+            border-left: 3px solid black;
+            border-top-left-radius: 12px;
+            padding: 10px 20px 10px 10px;
+            margin-left: -5px;
+            &:last-of-type {
+                border-right: 3px solid black;
+            }
+            &:first-of-type {
+                margin-left: 0px;
+            }
+            span {
+                font-weight: bold;
+            }
+
+            &:hover {
+                text-decoration: underline;
+                background-color: #CCCCCC;
+                border-bottom-color: #FFFFFF;
+                .preview{
+                    display: block;
+                }
+            }
+
+        }
+    }
+}
