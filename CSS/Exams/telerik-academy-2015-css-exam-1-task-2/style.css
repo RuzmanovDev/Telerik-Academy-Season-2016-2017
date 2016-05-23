@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#header {
+  font-size: 22px;
+}
+#header #logo {
+  display: inline-block;
+  width: 175px;
+  height: 60px;
+  background-image: url("images/logo.png");
+  background-repeat: no-repeat;
+}
+#header .separator {
+  display: inline-block;
+  width: 5px;
+  height: 45px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  margin-left: -5px;
+}
+#header #headerTitle {
+  display: inline-block;
+  font-family: Arial;
+  font-weight: bold;
+  padding-top: 19px;
+  vertical-align: top;
+  padding-left: 2px;
+}
+#header #search {
+  width: 995px;
+  height: 65px;
+  background-color: #0078D7;
+}
+#header #search .searchInput {
+  width: 400px;
+  height: 35px;
+  margin-left: 300px;
+  margin-top: 15px;
+}
+#main {
+  width: 970px;
+  text-align: justify;
+  font-family: Arial;
+  padding-left: 15px;
+  display: block;
+}
+#main h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 3px;
+  color: #333333;
+}
+#main h2 {
+  color: #333333;
+  font-size: 24px;
+  margin-top: 5px;
+  margin-left: 2px;
+  font-weight: normal;
+}
+#main hr {
+  height: 5px;
+  background-color: #333333;
+  margin-top: 8px;
+}
+#main p {
+  color: #333333;
+  margin-top: 10px;
+  font-size: 16px;
+}
+#footer {
+  width: 995px;
+  height: 60px;
+  background-color: #505050;
+  font-family: Arial;
+  font-size: 14px;
+  color: #CCCCCC;
+  margin-top: 60px;
+}
+#footer #language {
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#footer #copyright {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+#footer #footerMenu {
+  list-style-type: none;
+  margin-top: 20px;
+  float: right;
+  margin-right: 13px;
+}
+#footer #footerMenu li {
+  display: inline-block;
+  padding-right: 5px;
+}
+#footer #footerMenu li a {
+  text-decoration: none;
+  color: #CCCCCC;
+}
