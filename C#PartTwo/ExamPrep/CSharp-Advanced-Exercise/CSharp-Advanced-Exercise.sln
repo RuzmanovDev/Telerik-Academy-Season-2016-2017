@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPatterns", "XPatterns\XPat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9GagNumbers", "9GagNumbers\9GagNumbers.csproj", "{F72F5F1A-95E1-42EF-AA47-481A25988271}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecialValue", "SpecialValue\SpecialValue.csproj", "{D298768D-34FD-4489-9CFF-E9920988CC75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{F72F5F1A-95E1-42EF-AA47-481A25988271}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F72F5F1A-95E1-42EF-AA47-481A25988271}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F72F5F1A-95E1-42EF-AA47-481A25988271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D298768D-34FD-4489-9CFF-E9920988CC75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D298768D-34FD-4489-9CFF-E9920988CC75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D298768D-34FD-4489-9CFF-E9920988CC75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D298768D-34FD-4489-9CFF-E9920988CC75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

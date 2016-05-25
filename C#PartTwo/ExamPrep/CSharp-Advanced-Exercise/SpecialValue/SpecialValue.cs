@@ -46,7 +46,7 @@
             int row = 0;
             int col = 0;
 
-            for (int i = 0; i < numbers[0].Length; i++)
+            for (int i = 0; i < numbers[0].Length; i++) // get the element from the first row
             {
                 VisitedFalse(visited);
                 int startIndex = numbers[0][i];
