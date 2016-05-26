@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculationProblem", "CalculationProblem\CalculationProblem.csproj", "{AFA6A198-3F0C-4830-8F96-52F9BEB91AF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvenDifferences", "EvenDifferences\EvenDifferences.csproj", "{818C8574-D3B8-40F7-AD7C-C1908D2E0330}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFA6A198-3F0C-4830-8F96-52F9BEB91AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA6A198-3F0C-4830-8F96-52F9BEB91AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA6A198-3F0C-4830-8F96-52F9BEB91AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA6A198-3F0C-4830-8F96-52F9BEB91AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{818C8574-D3B8-40F7-AD7C-C1908D2E0330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{818C8574-D3B8-40F7-AD7C-C1908D2E0330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{818C8574-D3B8-40F7-AD7C-C1908D2E0330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{818C8574-D3B8-40F7-AD7C-C1908D2E0330}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
