@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ExtractSentences
+﻿namespace ExtractSentences
 {
+    using System;
+    using System.Linq;
+    using System.Text;
+
     class ExtractSentences
     {
         static void Main(string[] args)
@@ -31,14 +29,13 @@ namespace ExtractSentences
             {
                 string currentSentence = seperateSentences[i];
                
-
                 var splittedCurrentSentence = currentSentence.Split(separator);
                 foreach (var wordInSentence in splittedCurrentSentence)
                 {
                     if (word == wordInSentence)
                     {
-                        sentences.Append(currentSentence);
-                        sentences.Append('.');
+                        sentences.Append(currentSentence.Trim());
+                        sentences.Append(". ");
                         break;
                     }
                 }
