@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.SquareRoot", "SquareRoot\01.SquareRoot.csproj", "{900EBA0E-3803-41F3-BF6E-3F412F59E631}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadNumbers", "ReadNumbers\ReadNumbers.csproj", "{06A69E45-975D-4FA3-B5EE-C72A43BE5D85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{900EBA0E-3803-41F3-BF6E-3F412F59E631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{900EBA0E-3803-41F3-BF6E-3F412F59E631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{900EBA0E-3803-41F3-BF6E-3F412F59E631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{900EBA0E-3803-41F3-BF6E-3F412F59E631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A69E45-975D-4FA3-B5EE-C72A43BE5D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A69E45-975D-4FA3-B5EE-C72A43BE5D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A69E45-975D-4FA3-B5EE-C72A43BE5D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A69E45-975D-4FA3-B5EE-C72A43BE5D85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
