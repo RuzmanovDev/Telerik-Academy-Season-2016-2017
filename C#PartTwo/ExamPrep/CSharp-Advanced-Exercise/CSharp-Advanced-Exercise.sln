@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurankolakNumbers", "Durank
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoroTheRabbit", "JoroTheRabbit\JoroTheRabbit.csproj", "{EF1922E0-8C94-447F-8569-BC0120A01F75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slides", "Slides\Slides.csproj", "{3D1EE518-2168-4637-A824-DA8761101258}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{EF1922E0-8C94-447F-8569-BC0120A01F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF1922E0-8C94-447F-8569-BC0120A01F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF1922E0-8C94-447F-8569-BC0120A01F75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D1EE518-2168-4637-A824-DA8761101258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D1EE518-2168-4637-A824-DA8761101258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D1EE518-2168-4637-A824-DA8761101258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D1EE518-2168-4637-A824-DA8761101258}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
