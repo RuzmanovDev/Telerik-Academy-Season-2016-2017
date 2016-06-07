@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Roboto;
+  font-size: 16px; }
+
+#play {
+  position: relative; }
+
+#side-play {
+  position: absolute; }
+  #side-play .playlist-info .title-playlist {
+    margin-left: 19px; }
+  #side-play .playlist-info i.fa-cog {
+    float: right;
+    color: #B8AA9D;
+    margin-top: -22px;
+    margin-right: 10px; }
+    #side-play .playlist-info i.fa-cog:hover {
+      color: #B53536;
+      cursor: pointer; }
+
+#wrapper section {
+  display: inline-block; }
+#wrapper #side-play {
+  display: inline-block;
+  background-color: #1A1A1A;
+  height: 480px;
+  width: 425px;
+  margin-left: -4px; }
+  #wrapper #side-play h3 {
+    margin-top: 10px; }
+    #wrapper #side-play h3 a {
+      text-decoration: none;
+      color: #FFE3D7;
+      font-weight: normal;
+      font-size: 17px; }
+      #wrapper #side-play h3 a:hover {
+        text-decoration: underline; }
+  #wrapper #side-play p {
+    color: #B9B0AB;
+    font-size: 13px; }
+    #wrapper #side-play p a {
+      text-decoration: none;
+      color: #B9B0AB; }
+      #wrapper #side-play p a:hover {
+        text-decoration: underline; }
+    #wrapper #side-play p a:after:hover {
+      text-decoration: underline; }
+
+.controls {
+  margin-top: 25px;
+  margin-left: 16px;
+  color: #B7B9B6; }
+  .controls > i {
+    margin-left: 3px;
+    margin-right: 10px;
+    margin-top: 3px; }
+    .controls > i:hover {
+      color: #FFFAF4;
+      cursor: pointer; }
+
+.playlist {
+  margin-top: 20px;
+  background-color: #222222; }
+  .playlist ol {
+    list-style-type: none; }
+    .playlist ol li {
+      display: inline-block;
+      color: #CEC7C1;
+      width: 100%;
+      height: 100%;
+      font-weight: normal;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      .playlist ol li:hover {
+        background-color: #525252;
+        cursor: pointer; }
+      .playlist ol li div {
+        display: inline-block; }
+        .playlist ol li div span {
+          color: #CEC7C1;
+          font-size: 12px; }
+        .playlist ol li div h4 {
+          color: #CEC7C1;
+          font-weight: normal;
+          font-size: 14px; }
+        .playlist ol li div h5 {
+          color: #717370;
+          font-weight: normal; }
+
+.fa-play {
+  color: #BC343E;
+  position: absolute;
+  margin-top: 11px; }
+
+.video img {
+  position: relative;
+  margin-left: 25px; }
+.video span {
+  position: absolute;
+  margin-right: 5px;
+  left: 13px;
+  margin-top: 11px; }
+
+ol li:last-of-type {
+  background-color: #3A3A3A; }
+
+.video-info {
+  position: relative;
+  bottom: 15px;
+  left: 5px; }
+
+/*# sourceMappingURL=style.css.map */

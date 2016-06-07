@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Helvetica; }
+
+#wrapper #avatar {
+  margin-top: 5px;
+  margin-left: 5px; }
+  #wrapper #avatar img {
+    width: 230px;
+    height: 230px;
+    border-radius: 8px; }
+#wrapper .user-info #main-info h1 {
+  margin-top: 9px;
+  margin-left: 8px; }
+#wrapper .user-info #main-info h2 {
+  color: #66667D;
+  font-weight: normal;
+  margin-left: 6px;
+  font-size: 20px; }
+#wrapper .user-info #main-info #label {
+  border-radius: 3px;
+  display: inline-block;
+  background-color: #6CC644;
+  color: #F5FFFF;
+  font-weight: bold;
+  padding: 4px 4px 4px 4px;
+  font-size: 10px;
+  margin-left: 6px;
+  margin-top: 8px; }
+#wrapper .user-info #main-info a {
+  text-decoration: none;
+  color: #6DA6DD; }
+#wrapper .user-info #details #location {
+  display: inline; }
+#wrapper .user-info #details p {
+  display: inline;
+  margin-left: 10px; }
+#wrapper .user-info #details .octicon {
+  color: #999999;
+  margin-top: 20px;
+  margin-left: 5px; }
+#wrapper .user-info #details #mail {
+  margin-top: -8px; }
+  #wrapper .user-info #details #mail a {
+    text-decoration: none;
+    color: #6DA6DD; }
+#wrapper .user-info #details #joined {
+  margin-top: -11px; }
+#wrapper .user-info #git-info {
+  font-size: 12px;
+  font-weight: normal;
+  color: #A08F76;
+  margin-left: 18px;
+  margin-top: 17px; }
+  #wrapper .user-info #git-info span {
+    display: block;
+    color: #4078C0;
+    font-weight: bold;
+    font-size: 29px; }
+  #wrapper .user-info #git-info .followers {
+    display: inline-block; }
+  #wrapper .user-info #git-info .starred {
+    display: inline-block;
+    margin-left: 33px; }
+  #wrapper .user-info #git-info .following {
+    display: inline-block;
+    margin-left: 42px; }
+
+/*# sourceMappingURL=style.css.map */
