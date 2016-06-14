@@ -1,6 +1,5 @@
 function solve(args) {
-    var result,
-        text = args[0],
+    var result, text = args[0],
         offset = parseInt(args[1], 10),
         CONSTANTS = {
             ALPHABET: 'abcdefghijklmnopqrstuvwxyz'
