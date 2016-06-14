@@ -8,7 +8,6 @@
     public abstract class Furniture : IFurniture
     {
         private decimal height;
-        private string material;
         private string model;
         private decimal price;
 
@@ -42,12 +41,7 @@
         {
             get
             {
-                return this.material;
-            }
-
-            protected set
-            {
-                this.material = value;
+                return this.MaterialType.ToString();
             }
         }
 
