@@ -16,6 +16,7 @@ When you receive all the input you must find the winner. The winner is determine
 - You will receive several lines in format &quot;# white medenkas&quot; or &quot;# dark medenkas&quot; where &#39;#&#39; is an integer number.
 - When you read all received lines and calculate the damage dealt by both lords you may print the winner.
 
+
 ### Output
 
 - The consists of three lines:
