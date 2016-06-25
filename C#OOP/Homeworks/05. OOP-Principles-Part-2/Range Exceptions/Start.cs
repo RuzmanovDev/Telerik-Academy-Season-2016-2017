@@ -20,7 +20,7 @@
             }
             catch (InvalidRangeException<int> ex)
             {
-                Console.WriteLine("{2} It should be between {0} and {1}.", ex.Start, ex.End, ex.Message);
+                Console.WriteLine(ex.Message);
             }
 
             Console.Write("Enter date between 1.1.1980 and 31.12.2013 \n\r(format should be Year.Month.Day): ");
@@ -36,7 +36,7 @@
             }
             catch (InvalidRangeException<DateTime> ex)
             {
-                Console.WriteLine("{2} It should be between {0} and {1}.", ex.Start.ToShortDateString(), ex.End.ToShortDateString(), ex.Message);
+                Console.WriteLine(ex.Message);
             }
         }
     }

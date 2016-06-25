@@ -22,7 +22,7 @@
         {
             get
             {
-                return base.Message;
+                return $"The index must be bigger than {this.Start} and lesser than {this.End}!";
             }
         }
     }
