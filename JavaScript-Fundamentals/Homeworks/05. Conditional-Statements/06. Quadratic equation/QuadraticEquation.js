@@ -5,6 +5,7 @@ function solve(args) {
         descriminant,
         x1,
         x2;
+
     descriminant = (b * b) - (4 * a * c);
     x1 = 0;
     x2 = 0;
@@ -12,7 +13,7 @@ function solve(args) {
     if (descriminant == 0) {
         x1 = -b / (2 * a);
         x2 = x1;
-        return 'x1=x2=' + x1.toFixed(2);
+        return 'x1=x2='+ x1.toFixed(2);
     }
     else if (descriminant > 0) {
         x1 = (-b + Math.sqrt(descriminant)) / (2 * a);
@@ -22,5 +23,5 @@ function solve(args) {
         return 'no real roots';
     }
 
-    return 'x1=' + x2.toFixed(2) + '; x2=' + x1.toFixed(2);
+    return 'x1=' + x2.toFixed(2) +'; x2=' + x1.toFixed(2);
 }
