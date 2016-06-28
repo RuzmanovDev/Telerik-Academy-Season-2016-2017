@@ -32,7 +32,7 @@
         private static IBattleManager GetBattleManager(ICreaturesFactory creaturesFactory, ILogger logger)
         {
             // You are allowed to add, change and remove code here
-            return new BattleManager(creaturesFactory, logger);
+            return new ExtendedBattleManager(creaturesFactory, logger);
         }
 
         private static ICreaturesFactory GetCreaturesFactory()
