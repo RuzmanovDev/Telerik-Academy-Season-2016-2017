@@ -1,0 +1,39 @@
+JS falsy statements
+	false;
+	null;
+	undefined;
+	the empty string ""
+	the number 0
+	the number NaN
+	
+----------ARRAYS-------------	
+	// make array
+
+var numbers = [];
+
+/*if (obj.feature) {
+    // feature is supported
+} else {
+    // feature is not supported
+}*/
+
+// i can ask numbers[-1]
+
+numbers[-1] = 1; // -1 is the key and it is always string
+
+// makes array with 10 elements the fastest way
+var n = 10;
+var arr[n-1] = undefined ;
+
+// conacat two arrays
+var x, y = [];
+x.push.apply(x,y);
+// concat arrays at ecmasript 6 x.push(...y);
+// .. spread operator 
+
+---------Functions---------------
+
+If i have to retunr more the 1 value RETUR OBJECT
+
+Math.max.apply(null,array) – find max element of the array
+	
