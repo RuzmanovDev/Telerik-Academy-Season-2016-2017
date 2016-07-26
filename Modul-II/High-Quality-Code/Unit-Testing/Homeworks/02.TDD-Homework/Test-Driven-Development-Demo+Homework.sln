@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poker", "Poker.csproj", "{28FE6BA3-4622-406E-81C4-419B0D2368F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poker.Tests", "..\Poker.Tests\Poker.Tests.csproj", "{7B4A7F13-145C-460A-97CB-5C1E9A724112}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poker.Tests", "Poker.Tests\Poker.Tests.csproj", "{7B4A7F13-145C-460A-97CB-5C1E9A724112}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
