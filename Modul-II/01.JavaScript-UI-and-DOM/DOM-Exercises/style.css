@@ -1,0 +1,14 @@
+table,td,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 200px;
+}
+
+#show-table{
+    background-color: #fCAF50;
+    border:none;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    padding:10px 15px;
+}

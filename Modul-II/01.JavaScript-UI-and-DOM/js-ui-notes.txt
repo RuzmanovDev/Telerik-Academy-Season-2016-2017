@@ -1,0 +1,9 @@
+DOM element = JS object representing an element from the HTML
+
+inner html = променя текста вътре в тага
+
+
+първо се изпълняват chaining eventeite
+
+
+.find - селектира елементите вътре в самия елемент
