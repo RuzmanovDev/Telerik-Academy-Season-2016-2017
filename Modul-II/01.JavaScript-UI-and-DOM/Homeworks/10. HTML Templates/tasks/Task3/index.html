@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-3.1.0.js"></script>
+    <script src="../handlebars-v4.0.5.js"></script>
+    <script src="data.js"></script>
+</head>
+<body>
+<ul id="books-list" data-template="book-item-template"></ul>
+<script id="book-item-template" type="…">
+  <li class="book-item">
+    <a href="/#books/{{id}}">
+      <strong>{{title}}</strong>
+    </a>
+  </li>
+</script>
+<script>
+    var books = [
+        {
+            id: 2,
+            title: "some book"
+        }, {
+            id: 2,
+            title: "some book"
+        }, {
+            id: 2,
+            title: "some book"
+        }
+    ];
+
+    $('#books-list').listview(books); </script>
+
+</body>
+</html>
