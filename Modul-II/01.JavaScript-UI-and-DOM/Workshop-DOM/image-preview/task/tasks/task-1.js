@@ -1,120 +1,61 @@
 /* globals module */
 function solve() {
     return function (selector, items) {
-        var element = selector;
+        var container = document.querySelector(selector),
+            // create div template
+            divTemplate = document.createElement('div'),
+            imagePreviewDiv = divTemplate.cloneNode(true),
+            imageContainerDiv = divTemplate.cloneNode(true),
+            searchInput = document.createElement('input')
+                .setAttribute('type', 'text'),
+            // .setAttribute('id', 'search-input'),
+            // label for searchInput
+            labelForSearch = document.createElement('label')
+                .setAttribute('for', 'search-input').innerHTML = ''
+            headeingTemplate = document.createElement('h2');
 
-        var container = document.querySelector(element);
-        container.style.height = '500px';
-        console.log(container);
+        var mainHeading = headeingTemplate.cloneNode(true);
+        mainHeading.innerHTML = 'Test';
 
-        var liTemplate = document.createElement('li');
-        liTemplate.className = 'list-item';
-        var h4Template = document.createElement('h4');
-        var imageTemplate = document.createElement('img');
-        imageTemplate.className = 'smallImages';
+        setStylesToContainer();
+        setDivAttributes();
+        setDivStyles();
+        appendElementsToDom();
 
-        var leftContainer = document.createElement("div");
-        leftContainer.setAttribute('class', 'left-container');
-        var heading = document.createElement('h1');
-        heading.innerHTML = '';
-        var projector = document.createElement('div');
-        projector.className = 'projector';
-        var projectorImage = document.createElement('img');
-        projectorImage.setAttribute('src','');
-
-        projectorImage.style.width='300px';
-        projector.appendChild(projectorImage);
-        leftContainer.appendChild(heading);
-        leftContainer.appendChild(projector);
-        setStylesLeftContainer();
-
-        var rightContainer = document.createElement('div');
-        rightContainer.setAttribute('class', 'right-container');
-        //creating label
-        var label = document.createElement('label');
-        label.style.display = 'block';
-        label.style.textAlign = 'center';
-
-        label.innerHTML = 'Filter';
-
-        var searchInput = document.createElement('input');
-
-
-        rightContainer.appendChild(label);
-        rightContainer.appendChild(searchInput);
-
-        var imageList = document.createElement('ul');
-        imageList.style.listStyleType = 'none';
-        addItemsToList(imageList);
-
-        rightContainer.appendChild(imageList);
-        setStylesRightContainer();
-
-
-        container.appendChild(leftContainer);
-        container.appendChild(rightContainer);
-
-
-        // adding events
-        addEventToTheUlNavigation();
-
-        function setStylesRightContainer() {
-            rightContainer.style.float = 'left';
-            rightContainer.style.overflow = 'scroll';
-            rightContainer.style.height = '500px';
-            rightContainer.style.textAlign = 'center'
+        function setStylesToContainer() {
+            container.style.height = '500px';
         }
 
-        function setStylesLeftContainer() {
-            leftContainer.style.width = '600px';
-            leftContainer.style.float = 'left';
-
+        function setDivAttributes() {
+            imagePreviewDiv.setAttribute('class', 'image-preview');
+            imageContainerDiv.setAttribute('class', 'image-container');
         }
 
-        function addItemsToList(imageList) {
+        function setDivStyles() {
+            // image previuew
+            imagePreviewDiv.style.float = 'left';
+            imagePreviewDiv.style.width = '500px';
+            imagePreviewDiv.style.height = '300';
 
-            items.map(
-                function (currentElement) {
-                    var heading = h4Template.cloneNode(true);
-                    heading.innerHTML = currentElement.title;
-                    heading.className= 'list-headings';
-                    heading.style.textAlign = 'center';
-
-                    var li = liTemplate.cloneNode(true);
-                    var image = imageTemplate.cloneNode(true);
-                    image.setAttribute('src', currentElement.url);
-                    image.style.width = '200px';
-                    image.style.borderRadius = '10px';
-                    image.style.margin = '0 auto';
-                    li.appendChild(heading);
-                    li.appendChild(image);
-
-                    imageList.appendChild(li);
-                }
-            )
+            //image container
+            imageContainerDiv.style.float = 'left';
+            imageContainerDiv.style.overflow = 'scroll';
+            imageContainerDiv.style.height = '500px';
+            imageContainerDiv.style.textAlign = 'center';
+            //debug
+            imagePreviewDiv.style.boarder = '1px solid black';
+            imageContainerDiv.style.boarder = '1px solid black';
         }
 
-        function addEventToTheUlNavigation() {
-            imageList.addEventListener('click',
-                function (ev) {
-                    var link = ev.target,
-                        parent;
+        function appendElementsToDom() {
+            imageContainerDiv.appendChild(labelForSearch);
+            imageContainerDiv.appendChild(searchInput);
 
-                    // if (link.className.indexOf('list-item') < 0) {
-                    //     return;
-                    // }
-                    console.log(link);
-
-                    parent = link;
-                    while (parent && parent.className.indexOf("list-item") < 0) {
-                        parent = parent.parentNode;
-                    }
-                    projectorImage.src = link.src;
-                    console.log(link.innerHTML);
-                    heading.innerHTML = link.innerHTML;
-                })
+            imagePreviewDiv.appendChild(mainHeading);
+            container.appendChild(imagePreviewDiv);
+            container.appendChild(imageContainerDiv);
         }
-    };
+    }
 }
 
-module.exports = solve;
+//module.exports = solve;
