@@ -50,8 +50,7 @@ namespace Cosmetics.Tests
 
             var validCommand = "CreateCategory ForMale" + Environment.NewLine;
             Console.SetIn(new StringReader(validCommand));
-            var addTocategoryCommand = "AddToCategory ForMale Cool";
-            Console.SetIn(new StringReader(addTocategoryCommand));
+            Console.SetIn(new StringReader("AddToCategory ForMale Cool"));
             var removeCommand = "RemoveFromCategory ForMale Cool" + Environment.NewLine;
             Console.SetIn(new StringReader(removeCommand));
             mockedEngine.Start();

@@ -62,7 +62,7 @@
             var str = new string('s', max);
             Assert.DoesNotThrow(() => Validator.CheckIfStringLengthIsValid(str, max, min));
         }
-
+   
         // TODO: check for exceptionMessages 
     }
 
