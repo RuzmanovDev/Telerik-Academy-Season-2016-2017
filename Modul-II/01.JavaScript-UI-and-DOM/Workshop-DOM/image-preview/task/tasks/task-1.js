@@ -10,9 +10,10 @@ function solve() {
                 .setAttribute('type', 'text'),
             // .setAttribute('id', 'search-input'),
             // label for searchInput
-            labelForSearch = document.createElement('label')
-                .setAttribute('for', 'search-input').innerHTML = ''
+            labelForSearch = document.createElement('label'),
             headeingTemplate = document.createElement('h2');
+
+        labelForSearch.setAttribute('for', 'search-input').innerHTML = 'Search: ';
 
         var mainHeading = headeingTemplate.cloneNode(true);
         mainHeading.innerHTML = 'Test';
