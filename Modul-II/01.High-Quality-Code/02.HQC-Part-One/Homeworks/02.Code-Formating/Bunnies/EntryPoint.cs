@@ -1,10 +1,4 @@
-﻿// <copyright file="EntryPoint.cs" company="TelerikHW">
-//    Copyright (c) TelerikHW. All rights reserved.
-// </copyright>
-// <summary>
-//    Entry point of the program 
-// </summary>
-namespace Bunnies
+﻿namespace Bunnies
 {
     using System.Collections.Generic;
     using System.IO;
@@ -13,9 +7,6 @@ namespace Bunnies
     using Enums;
     using Models;
 
-    /// <summary>
-    /// Entry point of the program.
-    /// </summary>
     public class EntryPoint
     {
         public static void Main()

@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
     var off = 0,
         txt = "",
         pX = 0,
