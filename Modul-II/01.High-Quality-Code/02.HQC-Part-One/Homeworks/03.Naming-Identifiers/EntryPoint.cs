@@ -12,7 +12,7 @@ namespace Minesweeper
             string command = string.Empty;
             char[,] gameField = CreateGameField();
             char[,] mines = PutMinesOnField();
-            int openedCells = 0;
+            int visitedCells = 0;
             bool hasMineExploded = false;
             List<PlayerPoints> champions = new List<PlayerPoints>(6);
             int row = 0;
@@ -46,7 +46,7 @@ namespace Minesweeper
                 switch (command)
                 {
                     case Constants.TopCommand:
-                        ScoreBoard(champions);
+                        WriteScoreBoard(champions);
                         break;
                     case Constants.RestartCommand:
                         gameField = CreateGameField();
@@ -63,10 +63,10 @@ namespace Minesweeper
                             if (mines[row, column] == Constants.Dash)
                             {
                                 NextTurn(gameField, mines, row, column);
-                                openedCells++;
+                                visitedCells++;
                             }
 
-                            if (MaxSafeCells == openedCells)
+                            if (MaxSafeCells == visitedCells)
                             {
                                 gameHasEnded = true;
                             }
@@ -89,10 +89,10 @@ namespace Minesweeper
                 if (hasMineExploded)
                 {
                     DrawBoard(mines);
-                    Console.Write(Constants.DeadMessage, openedCells);
+                    Console.Write(Constants.DeadMessage, visitedCells);
 
                     string nickName = Console.ReadLine();
-                    PlayerPoints playerPoints = new PlayerPoints(nickName, openedCells);
+                    PlayerPoints playerPoints = new PlayerPoints(nickName, visitedCells);
                     if (champions.Count < 5)
                     {
                         champions.Add(playerPoints);
@@ -112,11 +112,11 @@ namespace Minesweeper
 
                     champions.Sort((PlayerPoints r1, PlayerPoints r2) => r2.Name.CompareTo(r1.Name));
                     champions.Sort((PlayerPoints r1, PlayerPoints r2) => r2.TotalPoints.CompareTo(r1.TotalPoints));
-                    ScoreBoard(champions);
+                    WriteScoreBoard(champions);
 
                     gameField = CreateGameField();
                     mines = PutMinesOnField();
-                    openedCells = 0;
+                    visitedCells = 0;
                     hasMineExploded = false;
                     startedNewGame = true;
                 }
@@ -127,12 +127,12 @@ namespace Minesweeper
                     DrawBoard(mines);
                     Console.WriteLine("What is your name, champ: ");
                     string nickName = Console.ReadLine();
-                    PlayerPoints to4kii = new PlayerPoints(nickName, openedCells);
-                    champions.Add(to4kii);
-                    ScoreBoard(champions);
+                    PlayerPoints playerPoints = new PlayerPoints(nickName, visitedCells);
+                    champions.Add(playerPoints);
+                    WriteScoreBoard(champions);
                     gameField = CreateGameField();
                     mines = PutMinesOnField();
-                    openedCells = 0;
+                    visitedCells = 0;
                     gameHasEnded = false;
                     startedNewGame = true;
                 }
@@ -143,7 +143,7 @@ namespace Minesweeper
             Console.Read();
         }
 
-        private static void ScoreBoard(List<PlayerPoints> points)
+        private static void WriteScoreBoard(List<PlayerPoints> points)
         {
             Console.WriteLine(Environment.NewLine + "Points:");
             if (points.Count > 0)
