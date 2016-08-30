@@ -1,106 +1,98 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Minesweeper
 {
     public class EntryPoint
     {
-        const char Asterix = '*';
-        const char Pipe = '|';
-        const char Dash = '-';
-        const string StartUpMessage = "Let's play \"Mines\". Try to find field withoud mine in it.";
-        const string CommandsHelp = "Command 'top' shows the scoarboard, 'restart' begins a new game , 'exit' exits the game!";
-        const string DeadMessage = "\nHrrrrrr! You have died! Your score is: {0} points. What is your name: ";
-        const string TopCommand = "top";
-        const string TurnCommand = "turn";
-        const string RestartCommand = "restart";
-        const string ExitComamnd = "exit";
-        static void Main()
+        public static void Main()
         {
+            const int MaxSafeCells = 35;
+
             string command = string.Empty;
             char[,] gameField = CreateGameField();
             char[,] mines = PutMinesOnField();
-            int counter = 0;
+            int openedCells = 0;
             bool hasMineExploded = false;
             List<Points> champions = new List<Points>(6);
             int row = 0;
             int column = 0;
             bool startedNewGame = true;
-            const int maks = 35;
             bool gameHasEnded = false;
 
             do
             {
                 if (startedNewGame)
                 {
-                    Console.WriteLine(StartUpMessage);
-                    Console.WriteLine(CommandsHelp);
+                    Console.WriteLine(Constants.StartUpMessage);
+                    Console.WriteLine(Constants.CommandsHelp);
 
-                    Draw(gameField);
+                    DrawBoard(gameField);
                     startedNewGame = false;
                 }
+
                 Console.Write("Enter row and column: ");
                 command = Console.ReadLine().Trim();
-                if (command.Length >= 3)
+                if (command.Length >= Constants.MaximumCommandLength)
                 {
                     if (int.TryParse(command[0].ToString(), out row) &&
                     int.TryParse(command[2].ToString(), out column) &&
                         row <= gameField.GetLength(0) && column <= gameField.GetLength(1))
                     {
-                        command = TurnCommand;
+                        command = Constants.TurnCommand;
                     }
                 }
+
                 switch (command)
                 {
-                    case "top":
+                    case Constants.TopCommand:
                         ScoreBoard(champions);
                         break;
-                    case "restart":
+                    case Constants.RestartCommand:
                         gameField = CreateGameField();
                         mines = PutMinesOnField();
-                        Draw(gameField);
+                        DrawBoard(gameField);
                         hasMineExploded = false;
                         startedNewGame = false;
                         break;
-                    case "exit":
-                        Console.WriteLine("4a0, 4a0, 4a0!");
+                    case Constants.ExitComamnd:
                         break;
-                    case TurnCommand:
-                        if (mines[row, column] != '*')
+                    case Constants.TurnCommand:
+                        if (mines[row, column] != Constants.Asterix)
                         {
-                            if (mines[row, column] == '-')
+                            if (mines[row, column] == Constants.Dash)
                             {
                                 NextTurn(gameField, mines, row, column);
-                                counter++;
+                                openedCells++;
                             }
-                            if (maks == counter)
+
+                            if (MaxSafeCells == openedCells)
                             {
                                 gameHasEnded = true;
                             }
                             else
                             {
-                                Draw(gameField);
+                                DrawBoard(gameField);
                             }
                         }
                         else
                         {
                             hasMineExploded = true;
                         }
+
                         break;
                     default:
                         Console.WriteLine("\nError! Invalid command!\n");
                         break;
                 }
+
                 if (hasMineExploded)
                 {
-                    Draw(mines);
-                    Console.Write("\nHrrrrrr! You have died! Your score is: {0} points. " +
-                        "What is your name: ", counter);
+                    DrawBoard(mines);
+                    Console.Write(Constants.DeadMessage, openedCells);
 
                     string nickName = Console.ReadLine();
-                    Points t = new Points(nickName, counter);
+                    Points t = new Points(nickName, openedCells);
                     if (champions.Count < 5)
                     {
                         champions.Add(t);
@@ -117,33 +109,36 @@ namespace Minesweeper
                             }
                         }
                     }
+
                     champions.Sort((Points r1, Points r2) => r2.Name.CompareTo(r1.Name));
                     champions.Sort((Points r1, Points r2) => r2.TotalPoints.CompareTo(r1.TotalPoints));
                     ScoreBoard(champions);
 
                     gameField = CreateGameField();
                     mines = PutMinesOnField();
-                    counter = 0;
+                    openedCells = 0;
                     hasMineExploded = false;
                     startedNewGame = true;
                 }
+
                 if (gameHasEnded)
                 {
                     Console.WriteLine("\nCongratz!! You have opened 35 cells wihout finding any mine!");
-                    Draw(mines);
+                    DrawBoard(mines);
                     Console.WriteLine("What is your name, champ: ");
                     string nickName = Console.ReadLine();
-                    Points to4kii = new Points(nickName, counter);
+                    Points to4kii = new Points(nickName, openedCells);
                     champions.Add(to4kii);
                     ScoreBoard(champions);
                     gameField = CreateGameField();
                     mines = PutMinesOnField();
-                    counter = 0;
+                    openedCells = 0;
                     gameHasEnded = false;
                     startedNewGame = true;
                 }
             }
-            while (command != "exit");
+            while (command != Constants.ExitComamnd);
+
             Console.WriteLine("Made in Bulgaria");
             Console.Read();
         }
@@ -155,9 +150,9 @@ namespace Minesweeper
             {
                 for (int i = 0; i < points.Count; i++)
                 {
-                    Console.WriteLine("{0}. {1} --> {2} kutii",
-                        i + 1, points[i].Name, points[i].TotalPoints);
+                    Console.WriteLine("{0}. {1} --> {2} Boxes", i + 1, points[i].Name, points[i].TotalPoints);
                 }
+
                 Console.WriteLine();
             }
             else
@@ -166,15 +161,14 @@ namespace Minesweeper
             }
         }
 
-        private static void NextTurn(char[,] gameField,
-            char[,] bombs, int row, int col)
+        private static void NextTurn(char[,] gameField, char[,] bombs, int row, int col)
         {
             char howManyBombs = HowManyBombs(bombs, row, col);
             bombs[row, col] = howManyBombs;
             gameField[row, col] = howManyBombs;
         }
 
-        private static void Draw(char[,] board)
+        private static void DrawBoard(char[,] board)
         {
             int rows = board.GetLength(0);
             int cols = board.GetLength(1);
@@ -187,9 +181,11 @@ namespace Minesweeper
                 {
                     Console.Write(string.Format("{0} ", board[r, c]));
                 }
+
                 Console.Write("|");
                 Console.WriteLine();
             }
+
             Console.WriteLine("   ---------------------\n");
         }
 
@@ -222,7 +218,7 @@ namespace Minesweeper
             {
                 for (int c = 0; c < cols; c++)
                 {
-                    gameField[r, c] = '-';
+                    gameField[r, c] = Constants.Dash;
                 }
             }
 
@@ -251,7 +247,7 @@ namespace Minesweeper
                     row++;
                 }
 
-                gameField[col, row - 1] = '*';
+                gameField[col, row - 1] = Constants.Asterix;
             }
 
             return gameField;
@@ -266,7 +262,7 @@ namespace Minesweeper
             {
                 for (int r = 0; r < row; r++)
                 {
-                    if (field[c, r] != '*')
+                    if (field[c, r] != Constants.Asterix)
                     {
                         char kolkoo = HowManyBombs(field, c, r);
                         field[c, r] = kolkoo;
@@ -283,60 +279,68 @@ namespace Minesweeper
 
             if (row - 1 >= 0)
             {
-                if (gameField[row - 1, column] == '*')
+                if (gameField[row - 1, column] == Constants.Asterix)
                 {
                     count++;
                 }
             }
+
             if (row + 1 < rows)
             {
-                if (gameField[row + 1, column] == '*')
+                if (gameField[row + 1, column] == Constants.Asterix)
                 {
                     count++;
                 }
             }
+
             if (column - 1 >= 0)
             {
-                if (gameField[row, column - 1] == '*')
+                if (gameField[row, column - 1] == Constants.Asterix)
                 {
                     count++;
                 }
             }
+
             if (column + 1 < cols)
             {
-                if (gameField[row, column + 1] == '*')
+                if (gameField[row, column + 1] == Constants.Asterix)
                 {
                     count++;
                 }
             }
+
             if ((row - 1 >= 0) && (column - 1 >= 0))
             {
-                if (gameField[row - 1, column - 1] == '*')
+                if (gameField[row - 1, column - 1] == Constants.Asterix)
                 {
                     count++;
                 }
             }
+
             if ((row - 1 >= 0) && (column + 1 < cols))
             {
-                if (gameField[row - 1, column + 1] == '*')
+                if (gameField[row - 1, column + 1] == Constants.Asterix)
                 {
                     count++;
                 }
             }
+
             if ((row + 1 < rows) && (column - 1 >= 0))
             {
-                if (gameField[row + 1, column - 1] == '*')
+                if (gameField[row + 1, column - 1] == Constants.Asterix)
                 {
                     count++;
                 }
             }
+
             if ((row + 1 < rows) && (column + 1 < cols))
             {
-                if (gameField[row + 1, column + 1] == '*')
+                if (gameField[row + 1, column + 1] == Constants.Asterix)
                 {
                     count++;
                 }
             }
+
             return char.Parse(count.ToString());
         }
     }

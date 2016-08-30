@@ -76,6 +76,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
     <Compile Include="Points.cs" />
     <Compile Include="EntryPoint.cs" />
   </ItemGroup>
