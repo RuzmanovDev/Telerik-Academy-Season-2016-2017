@@ -92,18 +92,18 @@ namespace Minesweeper
                     Console.Write(Constants.DeadMessage, openedCells);
 
                     string nickName = Console.ReadLine();
-                    Points t = new Points(nickName, openedCells);
+                    Points playerPoints = new Points(nickName, openedCells);
                     if (champions.Count < 5)
                     {
-                        champions.Add(t);
+                        champions.Add(playerPoints);
                     }
                     else
                     {
                         for (int i = 0; i < champions.Count; i++)
                         {
-                            if (champions[i].TotalPoints < t.TotalPoints)
+                            if (champions[i].TotalPoints < playerPoints.TotalPoints)
                             {
-                                champions.Insert(i, t);
+                                champions.Insert(i, playerPoints);
                                 champions.RemoveAt(champions.Count - 1);
                                 break;
                             }
@@ -182,7 +182,7 @@ namespace Minesweeper
                     Console.Write(string.Format("{0} ", board[r, c]));
                 }
 
-                Console.Write("|");
+                Console.Write(Constants.Pipe);
                 Console.WriteLine();
             }
 
