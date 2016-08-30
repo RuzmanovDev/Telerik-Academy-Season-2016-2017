@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Minesweeper
 {
-    public class EntryPoint
+    public class MineSweeper
     {
         public static void Main()
         {
@@ -13,22 +13,23 @@ namespace Minesweeper
             char[,] gameField = CreateGameField();
             char[,] mines = PutMinesOnField();
             int visitedCells = 0;
-            bool hasMineExploded = false;
             List<PlayerPoints> champions = new List<PlayerPoints>(6);
             int row = 0;
             int column = 0;
-            bool startedNewGame = true;
-            bool gameHasEnded = false;
+
+            bool hasMineExploded = false;
+            bool hasNewGameStarted = true;
+            bool hasGameEnded = false;
 
             do
             {
-                if (startedNewGame)
+                if (hasNewGameStarted)
                 {
                     Console.WriteLine(Constants.StartUpMessage);
                     Console.WriteLine(Constants.CommandsHelp);
 
                     DrawBoard(gameField);
-                    startedNewGame = false;
+                    hasNewGameStarted = false;
                 }
 
                 Console.Write("Enter row and column: ");
@@ -53,7 +54,7 @@ namespace Minesweeper
                         mines = PutMinesOnField();
                         DrawBoard(gameField);
                         hasMineExploded = false;
-                        startedNewGame = false;
+                        hasNewGameStarted = false;
                         break;
                     case Constants.ExitComamnd:
                         break;
@@ -68,7 +69,7 @@ namespace Minesweeper
 
                             if (MaxSafeCells == visitedCells)
                             {
-                                gameHasEnded = true;
+                                hasGameEnded = true;
                             }
                             else
                             {
@@ -110,18 +111,22 @@ namespace Minesweeper
                         }
                     }
 
-                    champions.Sort((PlayerPoints r1, PlayerPoints r2) => r2.Name.CompareTo(r1.Name));
-                    champions.Sort((PlayerPoints r1, PlayerPoints r2) => r2.TotalPoints.CompareTo(r1.TotalPoints));
+                    champions.Sort(
+                        (PlayerPoints firstPlayerPoints, PlayerPoints secondPlayerPoints) => secondPlayerPoints.Name
+                                                                                            .CompareTo(firstPlayerPoints.Name));
+                    champions.Sort(
+                        (PlayerPoints firstPlayerPoints, PlayerPoints secondPlayerPoints) => secondPlayerPoints.TotalPoints
+                                                                                            .CompareTo(firstPlayerPoints.TotalPoints));
                     WriteScoreBoard(champions);
 
                     gameField = CreateGameField();
                     mines = PutMinesOnField();
                     visitedCells = 0;
                     hasMineExploded = false;
-                    startedNewGame = true;
+                    hasNewGameStarted = true;
                 }
 
-                if (gameHasEnded)
+                if (hasGameEnded)
                 {
                     Console.WriteLine("\nCongratz!! You have opened 35 cells wihout finding any mine!");
                     DrawBoard(mines);
@@ -133,8 +138,8 @@ namespace Minesweeper
                     gameField = CreateGameField();
                     mines = PutMinesOnField();
                     visitedCells = 0;
-                    gameHasEnded = false;
-                    startedNewGame = true;
+                    hasGameEnded = false;
+                    hasNewGameStarted = true;
                 }
             }
             while (command != Constants.ExitComamnd);
@@ -163,21 +168,21 @@ namespace Minesweeper
 
         private static void NextTurn(char[,] gameField, char[,] bombs, int row, int col)
         {
-            char howManyBombs = HowManyBombs(bombs, row, col);
+            char howManyBombs = HowManyBombsAreAtThisPossition(bombs, row, col);
             bombs[row, col] = howManyBombs;
             gameField[row, col] = howManyBombs;
         }
 
         private static void DrawBoard(char[,] board)
         {
-            int rows = board.GetLength(0);
-            int cols = board.GetLength(1);
+            int boardRows = board.GetLength(0);
+            int boardCols = board.GetLength(1);
             Console.WriteLine("\n    0 1 2 3 4 5 6 7 8 9");
             Console.WriteLine("   ---------------------");
-            for (int r = 0; r < rows; r++)
+            for (int r = 0; r < boardRows; r++)
             {
                 Console.Write("{0} | ", r);
-                for (int c = 0; c < cols; c++)
+                for (int c = 0; c < boardCols; c++)
                 {
                     Console.Write(string.Format("{0} ", board[r, c]));
                 }
@@ -210,13 +215,13 @@ namespace Minesweeper
 
         private static char[,] PutMinesOnField()
         {
-            int rows = 5;
-            int cols = 10;
-            char[,] gameField = new char[rows, cols];
+            int boardRows = 5;
+            int boardCols = 10;
+            char[,] gameField = new char[boardRows, boardCols];
 
-            for (int r = 0; r < rows; r++)
+            for (int r = 0; r < boardRows; r++)
             {
-                for (int c = 0; c < cols; c++)
+                for (int c = 0; c < boardCols; c++)
                 {
                     gameField[r, c] = Constants.Dash;
                 }
@@ -233,14 +238,14 @@ namespace Minesweeper
                 }
             }
 
-            foreach (int i2 in randomNumbers)
+            foreach (int randomNumber in randomNumbers)
             {
-                int col = (i2 / cols);
-                int row = (i2 % cols);
-                if (row == 0 && i2 != 0)
+                int col = (randomNumber / boardCols);
+                int row = (randomNumber % boardCols);
+                if (row == 0 && randomNumber != 0)
                 {
                     col--;
-                    row = cols;
+                    row = boardCols;
                 }
                 else
                 {
@@ -255,25 +260,25 @@ namespace Minesweeper
 
         private static void Calculations(char[,] field)
         {
-            int col = field.GetLength(0);
-            int row = field.GetLength(1);
+            int fieldRows = field.GetLength(0);
+            int fieldCols = field.GetLength(1);
 
-            for (int c = 0; c < col; c++)
+            for (int c = 0; c < fieldCols; c++)
             {
-                for (int r = 0; r < row; r++)
+                for (int r = 0; r < fieldRows; r++)
                 {
                     if (field[c, r] != Constants.Asterix)
                     {
-                        char kolkoo = HowManyBombs(field, c, r);
-                        field[c, r] = kolkoo;
+                        char howManyBombsAreAtThisPossition = HowManyBombsAreAtThisPossition(field, c, r);
+                        field[c, r] = howManyBombsAreAtThisPossition;
                     }
                 }
             }
         }
 
-        private static char HowManyBombs(char[,] gameField, int row, int column)
+        private static char HowManyBombsAreAtThisPossition(char[,] gameField, int row, int column)
         {
-            int count = 0;
+            int bombsAtCurrentPosstiion = 0;
             int rows = gameField.GetLength(0);
             int cols = gameField.GetLength(1);
 
@@ -281,7 +286,7 @@ namespace Minesweeper
             {
                 if (gameField[row - 1, column] == Constants.Asterix)
                 {
-                    count++;
+                    bombsAtCurrentPosstiion++;
                 }
             }
 
@@ -289,7 +294,7 @@ namespace Minesweeper
             {
                 if (gameField[row + 1, column] == Constants.Asterix)
                 {
-                    count++;
+                    bombsAtCurrentPosstiion++;
                 }
             }
 
@@ -297,7 +302,7 @@ namespace Minesweeper
             {
                 if (gameField[row, column - 1] == Constants.Asterix)
                 {
-                    count++;
+                    bombsAtCurrentPosstiion++;
                 }
             }
 
@@ -305,7 +310,7 @@ namespace Minesweeper
             {
                 if (gameField[row, column + 1] == Constants.Asterix)
                 {
-                    count++;
+                    bombsAtCurrentPosstiion++;
                 }
             }
 
@@ -313,7 +318,7 @@ namespace Minesweeper
             {
                 if (gameField[row - 1, column - 1] == Constants.Asterix)
                 {
-                    count++;
+                    bombsAtCurrentPosstiion++;
                 }
             }
 
@@ -321,7 +326,7 @@ namespace Minesweeper
             {
                 if (gameField[row - 1, column + 1] == Constants.Asterix)
                 {
-                    count++;
+                    bombsAtCurrentPosstiion++;
                 }
             }
 
@@ -329,7 +334,7 @@ namespace Minesweeper
             {
                 if (gameField[row + 1, column - 1] == Constants.Asterix)
                 {
-                    count++;
+                    bombsAtCurrentPosstiion++;
                 }
             }
 
@@ -337,11 +342,11 @@ namespace Minesweeper
             {
                 if (gameField[row + 1, column + 1] == Constants.Asterix)
                 {
-                    count++;
+                    bombsAtCurrentPosstiion++;
                 }
             }
 
-            return char.Parse(count.ToString());
+            return char.Parse(bombsAtCurrentPosstiion.ToString());
         }
     }
 }
