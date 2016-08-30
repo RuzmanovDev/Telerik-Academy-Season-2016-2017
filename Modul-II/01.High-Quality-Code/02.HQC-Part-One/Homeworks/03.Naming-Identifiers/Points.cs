@@ -1,15 +1,15 @@
 ﻿namespace Minesweeper
 {
-    public class Points
+    public class PlayerPoints
     {
         private string name;
         private int totalPoints;
 
-        public Points()
+        public PlayerPoints()
         {
         }
 
-        public Points(string name, int points)
+        public PlayerPoints(string name, int points)
         {
             this.name = name;
             this.totalPoints = points;

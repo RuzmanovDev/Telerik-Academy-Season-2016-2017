@@ -14,7 +14,7 @@ namespace Minesweeper
             char[,] mines = PutMinesOnField();
             int openedCells = 0;
             bool hasMineExploded = false;
-            List<Points> champions = new List<Points>(6);
+            List<PlayerPoints> champions = new List<PlayerPoints>(6);
             int row = 0;
             int column = 0;
             bool startedNewGame = true;
@@ -92,7 +92,7 @@ namespace Minesweeper
                     Console.Write(Constants.DeadMessage, openedCells);
 
                     string nickName = Console.ReadLine();
-                    Points playerPoints = new Points(nickName, openedCells);
+                    PlayerPoints playerPoints = new PlayerPoints(nickName, openedCells);
                     if (champions.Count < 5)
                     {
                         champions.Add(playerPoints);
@@ -110,8 +110,8 @@ namespace Minesweeper
                         }
                     }
 
-                    champions.Sort((Points r1, Points r2) => r2.Name.CompareTo(r1.Name));
-                    champions.Sort((Points r1, Points r2) => r2.TotalPoints.CompareTo(r1.TotalPoints));
+                    champions.Sort((PlayerPoints r1, PlayerPoints r2) => r2.Name.CompareTo(r1.Name));
+                    champions.Sort((PlayerPoints r1, PlayerPoints r2) => r2.TotalPoints.CompareTo(r1.TotalPoints));
                     ScoreBoard(champions);
 
                     gameField = CreateGameField();
@@ -127,7 +127,7 @@ namespace Minesweeper
                     DrawBoard(mines);
                     Console.WriteLine("What is your name, champ: ");
                     string nickName = Console.ReadLine();
-                    Points to4kii = new Points(nickName, openedCells);
+                    PlayerPoints to4kii = new PlayerPoints(nickName, openedCells);
                     champions.Add(to4kii);
                     ScoreBoard(champions);
                     gameField = CreateGameField();
@@ -143,7 +143,7 @@ namespace Minesweeper
             Console.Read();
         }
 
-        private static void ScoreBoard(List<Points> points)
+        private static void ScoreBoard(List<PlayerPoints> points)
         {
             Console.WriteLine(Environment.NewLine + "Points:");
             if (points.Count > 0)
