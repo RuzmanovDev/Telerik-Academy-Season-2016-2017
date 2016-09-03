@@ -38,7 +38,8 @@ namespace Minesweeper
                 {
                     if (int.TryParse(command[0].ToString(), out row) &&
                     int.TryParse(command[2].ToString(), out column) &&
-                        row <= gameField.GetLength(0) && column <= gameField.GetLength(1))
+                        row <= gameField.GetLength(0) && 
+                        column <= gameField.GetLength(1))
                     {
                         command = Constants.TurnCommand;
                     }
@@ -112,11 +113,15 @@ namespace Minesweeper
                     }
 
                     champions.Sort(
-                        (PlayerPoints firstPlayerPoints, PlayerPoints secondPlayerPoints) => secondPlayerPoints.Name
-                                                                                            .CompareTo(firstPlayerPoints.Name));
+                        (PlayerPoints firstPlayerPoints, PlayerPoints secondPlayerPoints) => 
+                        secondPlayerPoints.Name
+                        .CompareTo(firstPlayerPoints.Name));
+
                     champions.Sort(
-                        (PlayerPoints firstPlayerPoints, PlayerPoints secondPlayerPoints) => secondPlayerPoints.TotalPoints
-                                                                                            .CompareTo(firstPlayerPoints.TotalPoints));
+                        (PlayerPoints firstPlayerPoints, PlayerPoints secondPlayerPoints) => 
+                        secondPlayerPoints.TotalPoints
+                        .CompareTo(firstPlayerPoints.TotalPoints));
+
                     WriteScoreBoard(champions);
 
                     gameField = CreateGameField();
