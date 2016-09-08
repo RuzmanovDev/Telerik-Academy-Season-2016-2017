@@ -392,12 +392,12 @@ function solve() {
         }
     };
 }
-// module.exports = solve;
-var module = solve();
-var catalog = module.getBookCatalog('John\'s catalog');
-//
-var book1 = module.getBook('The secrets of the JavaScript Ninja', '1234567890', 'IT', 'A book about JavaScript');
-console.log(book1);
+ module.exports = solve;
+// var module = solve();
+// var catalog = module.getBookCatalog('John\'s catalog');
+// //
+// var book1 = module.getBook('The secrets of the JavaScript Ninja', '1234567890', 'IT', 'A book about JavaScript');
+// console.log(book1);
 // var book2 = module.getBook('JavaScript: The Good Parts', '0123456789', 'IT', 'A good book about JS');
 //
 // var media = module.getMedia(222,1,222,5);
