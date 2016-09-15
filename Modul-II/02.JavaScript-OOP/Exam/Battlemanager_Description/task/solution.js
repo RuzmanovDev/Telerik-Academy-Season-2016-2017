@@ -234,12 +234,17 @@ function solve() {
         }
     }
 
-    let commanders = [];
-    let armyUnits = [];
-    const battlemanager = {
+
+    class Battlemanager {
+        constructor() {
+            this.commanders = [];
+            this.armyUnits = [];
+        }
+
         getSpell(name, manaCost, effect) {
             return new Spell(name, manaCost, effect);
-        },
+        }
+
         getArmyUnit(args) {
             let name = args.name;
             let alignment = args.alignment;
@@ -248,25 +253,30 @@ function solve() {
             let count = args.count;
             let speed = args.speed;
             let unit = new ArmyUnit(name, alignment, damage, health, count, speed);
-            armyUnits.push(unit);
+
+            this.armyUnits.push(unit);
             return unit;
-        },
+        }
+
         getCommander(name, alignment, mana) {
             return new Comander(name, alignment, mana);
-        },
+        }
+
         addCommanders(...args) {
             for (let commander of args) {
-                commanders.push(commander);
+                this.commanders.push(commander);
             }
             return this;
-        },
+        }
+
         addArmyUnitTo(commanderName, armyUnit) {
-            var commander = commanders.find(com => com.name == commanderName);
+            var commander = this.commanders.find(com => com.name == commanderName);
             commander.army.push(armyUnit);
             return this;
-        },
+        }
+
         addSpellsTo(commanderName, ...spells) {
-            var commander = commanders.find(com => com.name == commanderName);
+            var commander = this.commanders.find(com => com.name == commanderName);
 
             for (const spell of spells) {
                 try {
@@ -283,26 +293,29 @@ function solve() {
 
 
             return this;
-        },
+        }
+
         findCommanders(query) {
-            return commanders.filter(function (item) {
+            return this.commanders.filter(function (item) {
                 return Object.keys(query).every(function (prop) {
                     return query[prop] === item[prop];
                 });
             }).sort(function (a, b) {
                 return a.name - b.name;
             });
-        },
+        }
+
         findArmyUnitById(id) {
-            for (let unit of armyUnits) {
+            for (let unit of this.armyUnits) {
                 if (unit.id === id) {
                     return unit;
                 }
             }
             return undefined;
-        },
+        }
+
         findArmyUnits(query) {
-            return armyUnits.filter(function (item) {
+            return this.armyUnits.filter(function (item) {
                 return Object.keys(query).every(function (prop) {
                     return query[prop] === item[prop];
                 });
@@ -314,9 +327,9 @@ function solve() {
                 }
                 return b.speed - a.speed;
             });
-        },
+        }
         spellcast(casterName, spellName, targetUnitId) {
-            let caster = commanders.find(c => c.name === casterName);
+            let caster = this.commanders.find(c => c.name === casterName);
             if (typeof (caster) === "undefined") {
                 throw new Error("Can't cast with non-existant commander " + casterName + "!")
             }
@@ -326,7 +339,7 @@ function solve() {
                 throw new Error(casterName + " doesn't know " + spellName);
             }
 
-            let unitToBeAtacked = armyUnits.find(u => u.id === targetUnitId);
+            let unitToBeAtacked = this.armyUnits.find(u => u.id === targetUnitId);
             if (typeof (unitToBeAtacked) === "undefined") {
                 throw new Error("Target not found!")
             }
@@ -338,7 +351,8 @@ function solve() {
             caster.mana -= spellToCast.manaCost;
 
             return this;
-        },
+        }
+
         battle(attacker, defender) {
             _validateBattleUnit(attacker, ERROR_MESSAGES.INVALID_BATTLE_PARTICIPANT);
             _validateBattleUnit(defender, ERROR_MESSAGES.INVALID_BATTLE_PARTICIPANT);
@@ -352,11 +366,11 @@ function solve() {
 
 
             return this;
-        },
+        }
 
-    };
+    }
 
-    return battlemanager;
+    return new Battlemanager();
 }
 
 module.exports = solve;
