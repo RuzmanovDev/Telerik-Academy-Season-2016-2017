@@ -93,10 +93,7 @@ namespace SolarSystem
 
         private void EarthRotation()
         {
-            for (int step = 0; step <= 360; step++)
-            {
-                EarthRotationAngle = step * Days / EarthRotationPeriod;
-            }
+            EarthRotationAngle = 360 * Days / EarthRotationPeriod;
             Update("EarthRotationAngle");
         }
 
