@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareSimpleMath", "CompareSimpleMath\CompareSimpleMath.csproj", "{812D4816-A5F6-48F6-80D6-94BAC96EEF20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compare-Advanced-Maths", "Compare-Advanced-Maths\Compare-Advanced-Maths.csproj", "{52B84763-C0C5-45CD-934C-870C836540C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{812D4816-A5F6-48F6-80D6-94BAC96EEF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{812D4816-A5F6-48F6-80D6-94BAC96EEF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{812D4816-A5F6-48F6-80D6-94BAC96EEF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{812D4816-A5F6-48F6-80D6-94BAC96EEF20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52B84763-C0C5-45CD-934C-870C836540C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B84763-C0C5-45CD-934C-870C836540C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B84763-C0C5-45CD-934C-870C836540C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B84763-C0C5-45CD-934C-870C836540C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
