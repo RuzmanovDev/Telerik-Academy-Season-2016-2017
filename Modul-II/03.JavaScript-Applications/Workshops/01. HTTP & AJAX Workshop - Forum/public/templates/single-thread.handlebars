@@ -1,0 +1,10 @@
+<div class="thread">
+    <div><h3><a class="thread-title" href="#/threads/{{result.id}}">{{result.title}}</a></h3></div>
+    <div>
+        <p>
+            <span>Created on</span><span class="thread-date">{{result.postDate}}</span>
+            by <a class="thread-creator" href="#">{{#if result.username }}{{result.username}}{{else}}
+            anonymous{{/if}}</a>
+        </p>
+    </div>
+</div>
