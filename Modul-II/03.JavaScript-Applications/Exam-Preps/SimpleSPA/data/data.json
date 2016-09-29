@@ -1,0 +1,91 @@
+{
+  "users": [
+    {
+      "username": "pesho",
+      "passHash": "40bd001563085fc35165329ea1ff5c5ecbdbbeef",
+      "usernameLower": "pesho",
+      "authKey": "undefinedWjc(hMd+kxm-Ee!i$=_)FSRP!Nsk#s)V&#kianboN*NRULFPW(z",
+      "id": "4d69472e-9c96-4fbe-a4ae-46b277f42499"
+    },
+    {
+      "username": "cuki",
+      "passHash": "40bd001563085fc35165329ea1ff5c5ecbdbbeef",
+      "usernameLower": "cuki",
+      "authKey": "undefinedd+ZDiCmlDTVNb%&d_ats#XgzUj#gF)*wwv_@q_$oZ%)(*#&!Jg_",
+      "id": "bb9927ec-4b89-4d2e-9654-04451db7dd41"
+    },
+    {
+      "username": "",
+      "passHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "usernameLower": "",
+      "authKey": "undefinedR(IkoDoKhMoP#VmHP*%u^JLIsdW%MJYVVJ!vJj+tW^(fP@#X%Ty",
+      "id": "af8cbbda-fef8-4ab5-b752-13a46ff9c465"
+    },
+    {
+      "username": "ppeeesho",
+      "passHash": "7110eda4d09e062aa5e4a390b0a572ac0d2c0220",
+      "usernameLower": "ppeeesho",
+      "authKey": "undefined-jpkp(DEUDtw(!Yjf#v!zx-dwWP$QM-ZOt&nCy$#lN_S^+$C!TK",
+      "id": "e93a1f44-ecdf-4034-832f-dddaa4e5aac5"
+    },
+    {
+      "username": "admin",
+      "passHash": "d033e22ae348aeb5660fc2140aec35850c4da997",
+      "usernameLower": "admin",
+      "authKey": "undefinedLrKjNTbtne%hI@zITSdhcrCMrl_nLucAaifVNJL$*ssAwdx$*qo",
+      "id": "c2926cdf-ba84-4981-a34d-662087e94ee9",
+      "todos": [
+        {
+          "id": 335802,
+          "state": false,
+          "category": "uncategorized"
+        },
+        {
+          "id": 878528,
+          "state": false,
+          "category": "uncategorized"
+        },
+        {
+          "id": 986165,
+          "state": false,
+          "category": "uncategorized"
+        },
+        {
+          "id": 990601,
+          "state": false,
+          "category": "uncategorized"
+        },
+        {
+          "id": 52281,
+          "state": false,
+          "category": "uncategorized"
+        },
+        {
+          "id": 188915,
+          "state": false,
+          "category": "uncategorized"
+        },
+        {
+          "id": 19704,
+          "state": false,
+          "category": "uncategorized"
+        },
+        {
+          "id": 21383,
+          "state": false,
+          "category": "uncategorized"
+        },
+        {
+          "id": 21627,
+          "state": false,
+          "category": "uncategorized"
+        },
+        {
+          "id": 21907,
+          "state": false,
+          "category": "uncategorized"
+        }
+      ]
+    }
+  ]
+}
