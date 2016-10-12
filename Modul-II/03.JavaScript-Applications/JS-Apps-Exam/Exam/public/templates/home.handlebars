@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Home</h1>
+
+    {{#each result}}
+        <h3><a href="#/materials/{{id}}">{{title}}</a></h3>
+        <div class="container">
+            <div>{{description}}</div>
+            <div>{{description}}</div>
+            <div><img src="{{img}}" alt="" class="material-image"></div>
+            <div>{{createdOn}}</div>
+            <div>{{rating}}</div>
+            <div>Created by <a href="#/profiles/{{this.user.username}}">{{this.user.username}}</a></div>
+        </div>
+    {{/each}}
+
+</div>

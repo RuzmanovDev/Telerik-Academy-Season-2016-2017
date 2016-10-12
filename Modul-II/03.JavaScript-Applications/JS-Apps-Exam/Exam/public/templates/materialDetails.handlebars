@@ -1,0 +1,35 @@
+<div class="container">
+    <h1>Details for {{result.title}}</h1>
+    <img src="{{result.img}}" alt="" class="material-image">
+    <div>Created on {{result.createdOn}}</div>
+    <div>Description {{result.description}}</div>
+    <div>Rating {{result.rating}}</div>
+    {{#each result.comments}}
+        <div>{{text}}</div>
+        <div>Commented by {{user.username}}</div>
+    {{/each}}
+
+    <div class="form-group">
+        <h3>add to category for the first time</h3>
+        <select name="category" id="category-to-add">
+            <option>want-to-watch</option>
+            <option>watching</option>
+            <option>watched</option>
+        </select>
+        <button class="btn btn-default" id="btn-add-to-category">Add to category</button>
+        <br>
+        <h3>change the category</h3>
+        <select name="category-changer" id="category-to-change">
+            <option>want-to-watch</option>
+            <option>watching</option>
+            <option>watched</option>
+        </select>
+        <button class="btn btn-default" id="btn-change-category">Change cateogry</button>
+
+        <h3>Add comments</h3>
+        <label for="comment"></label>
+        <input type="text" id="comment">
+        <button class="btn-default btn" id="btn-add-comment">Add comment</button>
+
+    </div>
+</div>

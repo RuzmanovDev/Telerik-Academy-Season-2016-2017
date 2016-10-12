@@ -1,0 +1,16 @@
+<div class="container">
+    <div>
+        username: {{result.username}}
+    </div>
+
+    <div>
+        userMaterials:
+        <ul>
+            {{#each result.userMaterials}}
+                <li><a href="#/materials/{{id}}"> title: {{title}} </a>category: {{category}}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+
+</div>
