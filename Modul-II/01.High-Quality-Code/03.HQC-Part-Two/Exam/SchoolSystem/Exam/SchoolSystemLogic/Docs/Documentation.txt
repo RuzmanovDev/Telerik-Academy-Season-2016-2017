@@ -1,0 +1,18 @@
+﻿Bottleneck description: --------------------
+#1: In The engine class WritleLine Method Thread.Sleep(350) slows he program
+#2: In The engine class WriteLine Method The Loop slows the program
+#3: In the engine class WriteLine Method the message is splited then is concatinated again. This is unnecessary operation;
+
+
+
+Bug reports: --------------------
+Format: #Bug number - Class name - Bug description
+Example: #1 - PartnerBankingService - The variable "money" at line 36 overflows when you try to add more than 2.1 billion dollars.
+--------
+#1 - Class name = Grade - Grades must be between 1 and 12. From 1 to 8 they were missing
+#2 - Class name = StudentListMarksCommand.cs - StudentListMarksCommand in the Engine wasn't printing
+#3 - Class name = CreateTeacherCommand - There was no Id passed to the teacher when creating it
+#4 - Class name = TeacherAddCommand - The studentId and teacherId were switched in the Execute Method of the TeacherAddCommand class
+
+MiddleMan
+BussinessLogicService is unnecessary 
