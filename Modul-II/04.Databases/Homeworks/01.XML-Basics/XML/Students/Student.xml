@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="Student.xslt"?>
+
+<students>
+  <student xmlns:students="urn:students-academy-com:developer">
+    <name>Pesho</name>
+    <sex>male</sex>
+    <birth-date>1.01.2000</birth-date>
+    <phone>088888888</phone>
+    <email>pesho@gmail.com</email>
+    <course>fourth</course>
+    <specialty>IT</specialty>
+    <faculty-number>11111111</faculty-number>
+    <taken-exams>
+      <exam>
+        <name>JsApps</name>
+        <tutor>Doncho</tutor>
+        <score>100</score>
+      </exam>
+    </taken-exams>
+    <incoming-exams>
+      <exam>
+        <name>DB</name>
+        <date>2016-11-01</date>
+        <tutor>Petkan</tutor>
+      </exam>
+    </incoming-exams>
+  </student>
+
+  <student>
+    <name>Ivan</name>
+    <sex>male</sex>
+    <birth-date>1.01.2000</birth-date>
+    <phone>088877777</phone>
+    <email>ivan@gmail.com</email>
+    <course>fourth</course>
+    <specialty>IT</specialty>
+    <faculty-number>11111111</faculty-number>
+    <taken-exams>
+      <exam>
+        <name>JsApps</name>
+        <tutor>Doncho</tutor>
+        <score>100</score>
+      </exam>
+    </taken-exams>
+    <incoming-exams>
+      <exam>
+        <name>Design Paterns</name>
+        <date>2016-11-01</date>
+        <tutor>Gosho</tutor>
+      </exam>
+    </incoming-exams>
+  </student>
+
+</students>
