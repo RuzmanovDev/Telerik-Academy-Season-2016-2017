@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <dir path="../../bin" />
+    <dir path="../../obj" />
+    <dir path="../../Properties" />
+    <file name="albums" ext=".xml" />
+    <file name="App" ext=".config" />
+    <file name="catalog" ext=".html" />
+    <file name="Catalogue" ext=".xml" />
+    <file name="Client" ext=".csproj" />
+    <file name="Client.csproj" ext=".user" />
+    <file name="dir" ext=".xml" />
+    <file name="dirXDocument" ext=".xml" />
+    <file name="Person" ext=".Xml" />
+    <file name="PersonInfo" ext=".txt" />
+    <file name="style" ext=".xslt" />
+    <file name="XmlOperations" ext=".cs" />
+</root>

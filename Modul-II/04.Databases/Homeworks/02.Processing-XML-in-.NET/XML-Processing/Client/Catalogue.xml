@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xslt"?>
+<catalogue xmlns:catalogue="urn:catalogue-academy-com:music">
+  <album>
+    <name>Dark Horse</name>
+    <artist>Nickelback</artist>
+    <year>2008</year>
+    <producer>me</producer>
+    <price>10</price>
+    <songs>
+      <song>
+        <title>Dark Hourse</title>
+        <duration>3,45</duration>
+      </song>
+      <song>
+        <title>Burn it to the ground</title>
+        <duration>3,45</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>The long road</name>
+    <artist>Nickelback</artist>
+    <year>2003</year>
+    <producer>me</producer>
+    <price>10</price>
+    <songs>
+      <song>
+        <title>Someday</title>
+        <duration>3,45</duration>
+      </song>
+      <song>
+        <title>Flat on the floor</title>
+        <duration>3,20</duration>
+      </song>
+    </songs>
+  </album>
+</catalogue>

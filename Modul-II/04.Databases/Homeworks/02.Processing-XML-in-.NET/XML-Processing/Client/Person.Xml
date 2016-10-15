@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<personInfo>
+  <person>
+    <name>Pesho</name>
+    <address>Mladost1</address>
+    <phone>0891231239</phone>
+    <name>Dragan</name>
+    <address>Ovcha Kupel</address>
+    <phone>88899111</phone>
+  </person>
+  <person>
+    <name>Pesho</name>
+    <address>Mladost1</address>
+    <phone>0891231239</phone>
+    <name>Dragan</name>
+  </person>
+</personInfo>
