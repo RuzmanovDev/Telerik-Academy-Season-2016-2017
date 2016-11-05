@@ -16,7 +16,7 @@
             //try
             //{
             //    var dbContex = new SocialDbContext();
-            //    Database.SetInitializer(new MigrateDatabaseToLatestVersion<SocialDbContext, Configuration>());
+            //     
 
             //    dbContex.Posts.Add(new Post()
             //    {
