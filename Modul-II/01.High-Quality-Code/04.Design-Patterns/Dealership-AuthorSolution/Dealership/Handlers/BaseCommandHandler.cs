@@ -1,0 +1,52 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Dealership.Engine;
+
+namespace Dealership.Handlers
+{
+    public abstract class BaseCommandHandler : ICommandHandler
+    {
+        private const string InvalidCommand = "Invalid command!";
+
+        private ICommandHandler nextHandler;
+
+        public void AddCommandHandler(ICommandHandler nextHandler)
+        {
+            this.nextHandler = nextHandler;
+        }
+
+        public string HandleCommand(ICommand command, IDealershipEngine engine)
+        {
+            string result;
+            if (this.CanHandle(command))
+            {
+                result = this.Handle(command, engine);
+            }
+            else if (this.nextHandler != null)
+            {
+                result = this.nextHandler.HandleCommand(command, engine);
+            }
+            else
+            {
+                result = string.Format(InvalidCommand, command.Name);
+            }
+
+            return result;
+        }
+
+        protected void ValidateRange(int? value, int min, int max, string message)
+        {
+            if (value < min || value >= max)
+            {
+                throw new ArgumentException(message);
+            }
+        }
+
+        protected abstract bool CanHandle(ICommand command);
+
+        protected abstract string Handle(ICommand command, IDealershipEngine engine);
+    }
+}
