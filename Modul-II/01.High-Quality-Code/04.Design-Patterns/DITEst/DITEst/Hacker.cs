@@ -17,7 +17,7 @@ namespace DITEst
             ioProvider.Write("You Were not hacked");
         }
 
-        [Log]
+      
         public void Hack()
         {
             this.ioProvider.Write("YOu Were Hacked");
