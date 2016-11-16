@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "firstName": "Pesho",
+            "middleName": "Petrov",
+            "lastName": "Petrov",
+            "insuranceNumber": "123-123-123",
+            "age": 12,
+            "contactDetails": {}
+        },
+        {}
+    ]
+}
