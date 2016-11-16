@@ -13,7 +13,6 @@ db.on('open', () => {
     console.log('Connection successfull!');
 });
 
-
 var em = new Employee({
     firstName: "Goshko",
     middleName: "Petrov",
