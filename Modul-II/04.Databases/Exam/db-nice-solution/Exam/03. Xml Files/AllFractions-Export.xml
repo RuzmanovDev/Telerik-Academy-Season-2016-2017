@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<fractions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <fractions>
+    <fraction id="1">
+      <membersCount>2</membersCount>
+      <name>Justice League</name>
+      <planets />
+    </fraction>
+    <fraction id="2">
+      <membersCount>2</membersCount>
+      <name>The Bat Family</name>
+      <planets />
+    </fraction>
+    <fraction id="3">
+      <membersCount>3</membersCount>
+      <name>Avengers</name>
+      <planets />
+    </fraction>
+    <fraction id="4">
+      <membersCount>2</membersCount>
+      <name>Illuminati</name>
+      <planets>
+        <string>Earth</string>
+      </planets>
+    </fraction>
+    <fraction id="5">
+      <membersCount>2</membersCount>
+      <name>Green Lantern Corps</name>
+      <planets />
+    </fraction>
+    <fraction id="6">
+      <membersCount>1</membersCount>
+      <name>Guardians of the Universe</name>
+      <planets>
+        <string>Bolovax Vik</string>
+      </planets>
+    </fraction>
+    <fraction id="7">
+      <membersCount>1</membersCount>
+      <name>Crime Syndicate</name>
+      <planets>
+        <string>Earth 3</string>
+      </planets>
+    </fraction>
+    <fraction id="8">
+      <membersCount>2</membersCount>
+      <name>X-Men</name>
+      <planets />
+    </fraction>
+  </fractions>
+</fractions>

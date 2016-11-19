@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<superheroes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <superheroes>
+    <superhero id="3">
+      <name>Ironman</name>
+      <secretIdentity>Tonny Stark</secretIdentity>
+      <powers>
+        <string>Intelligence</string>
+        <string>Big robot suit</string>
+      </powers>
+      <alignment>Good</alignment>
+      <city>New York</city>
+    </superhero>
+    <superhero id="4">
+      <name>Dr. Stephen Strange</name>
+      <secretIdentity>Dr. Stephen Strange</secretIdentity>
+      <powers>
+        <string>Magic</string>
+        <string>Dimensional travel</string>
+        <string>Martial arts</string>
+      </powers>
+      <alignment>Good</alignment>
+      <city>New York</city>
+    </superhero>
+    <superhero id="12">
+      <name>Professor X</name>
+      <secretIdentity>Charles Francis Xavi</secretIdentity>
+      <powers>
+        <string>Telepathics</string>
+        <string>Mutant</string>
+      </powers>
+      <alignment>Good</alignment>
+      <city>New York</city>
+    </superhero>
+  </superheroes>
+</superheroes>
