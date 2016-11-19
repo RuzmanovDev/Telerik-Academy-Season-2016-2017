@@ -1,0 +1,12 @@
+<fractions>
+  <fraction id="1" members="1" />
+  <name>Justice League</name>
+  <planets>
+    <planet>Earth</planet>
+  </planets>
+  <fraction id="2" members="1" />
+  <name>The Bat Family</name>
+  <planets>
+    <planet>Earth</planet>
+  </planets>
+</fractions>

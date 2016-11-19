@@ -1,0 +1,50 @@
+1. Returning all computers (vendor, model, id) with memory (RAM) between provided range
+go
+CREATE PROCEDURE usp_GetComputersWithRamBetween @MinRam int, @MaxRam int
+AS
+
+	Select Vendor, Model, Id
+	FROM Computers
+	WHERE RAM between @MinRam and @MaxRam
+
+GO
+
+exec usp_GetComputersWithRamBetween 1,8
+
+--------
+
+2. Returning all computers with a specific GPU (by id) and range of memory (as the above)
+
+CREATE PROCEDURE usp_GetComputersWithGpuAndRamBetween @GpuId int, @MinRam int, @MaxRam int
+AS
+
+SELECT c.Id as ComputerID, c.Vendor as ComputerVendor, c.RAM as ComputerRam, g.Model as GPUModel ,g.Vendor as GPUVendor
+FROM Computers c
+JOIN ComputersGPUs cgp
+	on c.id = cgp.ComputerId
+JOIN GPUs g
+	on g.Id = cgp.GPUId
+WHERE GPUId = @GpuId AND RAM between @MinRam and @MaxRam
+
+exec usp_GetComputersWithGpuAndRamBetween 2,8,16
+
+
+3.  Return all GPUs that can be paired with a concrete computer type (dekstop, ultrabook or notebook)
+
+CREATE PROCEDURE 
+usp_GetGpusForComputerType @ComputerType nvarchar(50)
+AS
+SELECT g.Vendor as GPUVendor, g.Model as GPUModel
+FROM Computers c
+JOIN ComputersGpus cg
+	ON c.id = cg.ComputerId
+JOIN GPUs g
+	On g.Id = cg.GPUId
+JOIN ComputerTypes ct
+	on ct.Id = c.Id
+WHERE ct.TypeName = @ComputerType
+
+exec usp_GetGpusForComputerType 'Ultrabook'
+exec usp_GetGpusForComputerType 'Desktop'
+exec usp_GetGpusForComputerType 'Notebook'
+
