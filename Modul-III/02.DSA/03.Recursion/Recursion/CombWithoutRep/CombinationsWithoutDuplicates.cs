@@ -2,7 +2,7 @@
 
 namespace CombWithoutRep
 {
-    public class CombinationsWithDuplicates
+    public class CombinationsWithoutDuplicates
     {
         static void Main()
         {

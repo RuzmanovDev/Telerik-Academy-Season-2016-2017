@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.VariationsWithouthRep", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.AllPathsBetweenTwoCellsInMatrix", "AllPathsBetweenTwoCellsInMatrix\07.AllPathsBetweenTwoCellsInMatrix.csproj", "{46FC71AD-31E8-4C55-91A5-4AAC3360157E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{E7E724D9-FBD4-4C9F-935F-808705126CD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{46FC71AD-31E8-4C55-91A5-4AAC3360157E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46FC71AD-31E8-4C55-91A5-4AAC3360157E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46FC71AD-31E8-4C55-91A5-4AAC3360157E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7E724D9-FBD4-4C9F-935F-808705126CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7E724D9-FBD4-4C9F-935F-808705126CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7E724D9-FBD4-4C9F-935F-808705126CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7E724D9-FBD4-4C9F-935F-808705126CD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
