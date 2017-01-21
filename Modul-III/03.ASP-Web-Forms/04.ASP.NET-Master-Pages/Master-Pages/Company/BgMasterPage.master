@@ -1,0 +1,12 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="BgMasterPage.master.cs" Inherits="Company.BgMasterPage" %>
+
+<asp:Content ID="BgMenu" ContentPlaceHolderID="MenuPlaceHolder" runat="server">
+    <li><a runat="server" href="~/HomeBg.aspx">Налало</a></li>
+    <li><a runat="server" href="~/AboutBg.aspx">За нас</a></li>
+    <li><a runat="server" href="~/ContactBg.aspx">Контакти</a></li>
+</asp:Content>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="BgContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

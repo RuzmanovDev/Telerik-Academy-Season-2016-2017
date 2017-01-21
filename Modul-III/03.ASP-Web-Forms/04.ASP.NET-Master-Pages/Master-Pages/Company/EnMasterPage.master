@@ -1,0 +1,11 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EnMasterPage.master.cs" Inherits="Company.EnMasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MenuPlaceHolder" runat="server">
+    <li><a runat="server" href="~/">Home</a></li>
+    <li><a runat="server" href="~/About">About</a></li>
+    <li><a runat="server" href="~/Contact">Contact</a></li>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="EnContent" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
